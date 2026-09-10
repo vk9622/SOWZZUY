@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOWZZUY | Premium Beauty & Personal Care – Face Serum, Face Wash, Hair Serum</title>
+<meta name="description" content="SOWZZUY is a premium Indian beauty & personal care brand. Shop SOWZZUY Face Serum ₹499, Face Wash ₹399, Hair Serum ₹499. Elevate Your Everyday Beauty.">
+<meta name="keywords" content="SOWZZUY, premium beauty, face serum, face wash, hair serum, skincare India, haircare India">
+<meta property="og:title" content="SOWZZUY – Elevate Your Everyday Beauty">
+<meta property="og:description" content="Premium beauty essentials crafted for everyday skincare and haircare routine.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#1C1316',
+        espresso: '#2A1E22',
+        gold: '#C9A15A',
+        golddark: '#9C7A3A',
+        blush: '#FFF6EF',
+        cream: '#FDF0E6',
+        rose: '#E9A88A',
+        rosedeep: '#C97A5E',
+        sage: '#8AA899'
+      },
+      fontFamily: {
+        serif: ['"Playfair Display"', 'serif'],
+        sans: ['Jost', 'sans-serif']
+      },
+      boxShadow: {
+        lux: '0 20px 60px -15px rgba(28,19,22,0.18)',
+        card: '0 12px 40px -10px rgba(201,161,90,0.25)',
+        glow: '0 0 0 6px rgba(201,161,90,0.12)'
+      }
+    }
+  }
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  *{ -webkit-tap-highlight-color: transparent; }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:'Jost',sans-serif; background:#FFFCF8; color:#1C1316; overflow-x:hidden; }
+  ::selection{ background:#C9A15A; color:#fff; }
+  ::-webkit-scrollbar{ width:10px; height:8px; }
+  ::-webkit-scrollbar-track{ background:#FFF6EF; }
+  ::-webkit-scrollbar-thumb{ background:linear-gradient(#C9A15A,#E9A88A); border-radius:20px; }
+
+  .gold-text{ background:linear-gradient(105deg,#9C7A3A 0%,#C9A15A 25%,#F3D9A0 50%,#C9A15A 75%,#9C7A3A 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-size:200% auto; animation:shineText 5s linear infinite; }
+  @keyframes shineText{ to{ background-position:200% center; } }
+
+  .btn-lux{ position:relative; overflow:hidden; transition:.4s cubic-bezier(.2,.8,.2,1); }
+  .btn-lux::after{ content:''; position:absolute; top:0; left:-80%; width:50%; height:100%; background:linear-gradient(110deg,transparent,rgba(255,255,255,.5),transparent); transform:skewX(-20deg); transition:.6s; }
+  .btn-lux:hover::after{ left:130%; }
+  .btn-lux:hover{ transform:translateY(-2px); box-shadow:0 15px 35px -10px rgba(28,19,22,.35); }
+  .btn-lux:active{ transform:translateY(0) scale(.98); }
+
+  .glass{ background:rgba(255,255,255,.75); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); }
+  .arch{ border-radius:999px 999px 28px 28px; }
+  .reveal{ opacity:0; transform:translateY(36px); transition:all .9s cubic-bezier(.2,.7,.2,1); }
+  .reveal.active{ opacity:1; transform:none; }
+  .reveal-delay-1{ transition-delay:.12s; } .reveal-delay-2{ transition-delay:.24s; } .reveal-delay-3{ transition-delay:.36s; }
+
+  .marquee-track{ display:flex; gap:0; width:max-content; animation:marquee 26s linear infinite; }
+  @keyframes marquee{ to{ transform:translateX(-50%); } }
+
+  .float-slow{ animation:floatY 6s ease-in-out infinite; }
+  .float-slow2{ animation:floatY 7.5s ease-in-out infinite reverse; }
+  @keyframes floatY{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-14px);} }
+  .spin-slow{ animation:spin 18s linear infinite; }
+  @keyframes spin{ to{ transform:rotate(360deg);} }
+
+  .blob{ position:absolute; filter:blur(70px); opacity:.5; pointer-events:none; }
+  .card-hover{ transition:.5s cubic-bezier(.2,.8,.2,1); }
+  .card-hover:hover{ transform:translateY(-10px); box-shadow:0 30px 60px -18px rgba(28,19,22,.22); }
+  .img-zoom{ overflow:hidden; } .img-zoom img{ transition:transform 1.2s cubic-bezier(.2,.8,.2,1); } .img-zoom:hover img{ transform:scale(1.08); }
+
+  .nav-link{ position:relative; }
+  .nav-link::after{ content:''; position:absolute; left:0; bottom:-4px; width:0; height:2px; background:linear-gradient(90deg,#C9A15A,#E9A88A); transition:.35s; border-radius:10px; }
+  .nav-link:hover::after,.nav-link.active::after{ width:100%; }
+
+  #header.scrolled{ background:rgba(255,252,248,.92); backdrop-filter:blur(16px); box-shadow:0 8px 30px -12px rgba(28,19,22,.15); }
+  #header.scrolled .header-inner{ padding-top:.65rem; padding-bottom:.65rem; }
+
+  .drawer{ transition:transform .5s cubic-bezier(.2,.8,.2,1); }
+  .overlay{ transition:opacity .4s; }
+
+  .faq-item .faq-answer{ max-height:0; overflow:hidden; transition:max-height .5s cubic-bezier(.2,.8,.2,1), padding .3s; }
+  .faq-item.open .faq-answer{ max-height:300px; }
+  .faq-item.open .faq-icon{ transform:rotate(45deg); background:#1C1316; color:#fff; }
+  .faq-icon{ transition:.4s; }
+
+  .filter-pill{ transition:.35s; }
+  .filter-pill.active{ background:#1C1316; color:#fff; border-color:#1C1316; box-shadow:0 10px 25px -8px rgba(28,19,22,.4); }
+
+  .star{ color:#E9A426; }
+  .no-scrollbar::-webkit-scrollbar{ display:none; } .no-scrollbar{ scrollbar-width:none; }
+
+  .step-dot{ transition:.4s; }
+  .toast-in{ animation:toastIn .5s cubic-bezier(.2,.8,.2,1) forwards; }
+  @keyframes toastIn{ from{ transform:translateX(120%); opacity:0;} to{ transform:translateX(0); opacity:1;} }
+
+  .success-check{ stroke-dasharray:60; stroke-dashoffset:60; animation:draw .8s .3s forwards ease-out; }
+  @keyframes draw{ to{ stroke-dashoffset:0; } }
+  .success-circle{ stroke-dasharray:200; stroke-dashoffset:200; animation:draw 1s forwards ease-out; }
+
+  .review-track{ scroll-snap-type:x mandatory; }
+  .review-card{ scroll-snap-align:center; }
+
+  input:focus,textarea:focus,select:focus{ outline:none; border-color:#C9A15A !important; box-shadow:0 0 0 4px rgba(201,161,90,.14); }
+  .qty-btn{ transition:.25s; } .qty-btn:hover{ background:#1C1316; color:#fff; } .qty-btn:active{ transform:scale(.9); }
+
+  .hero-pattern{ background-image:radial-gradient(rgba(201,161,90,.18) 1.5px, transparent 1.5px); background-size:22px 22px; }
+  .gold-border{ position:relative; }
+  .gold-border::before{ content:''; position:absolute; inset:-2px; border-radius:inherit; padding:2px; background:linear-gradient(135deg,#C9A15A,#F3D9A0,#E9A88A,#C9A15A); -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite:xor; mask-composite:exclude; pointer-events:none; }
+
+  @media(max-width:768px){ .arch{ border-radius:180px 180px 24px 24px; } }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ANNOUNCEMENT -->
+<div class="bg-ink text-white text-center text-[12px] sm:text-[13px] tracking-[0.15em] uppercase py-2.5 px-4 relative overflow-hidden">
+  <div class="flex justify-center items-center gap-3 flex-wrap">
+    <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
+    <span id="announceText" class="font-medium">Free Shipping on Orders Above ₹499 • COD Available Across India</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none"></div>
+</div>
+
+<!-- HEADER -->
+<header id="header" class="sticky top-0 z-50 transition-all duration-300 bg-[#FFFCF8]/80 backdrop-blur-md border-b border-[#C9A15A]/15">
+  <div class="header-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-4 transition-all duration-300">
+    <button id="mobileMenuBtn" class="lg:hidden w-10 h-10 rounded-full bg-ink text-white flex items-center justify-center hover:bg-gold transition"><i class="fa-solid fa-bars"></i></button>
+    <a href="#home" class="flex items-center gap-2.5 group">
+      <span class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-br from-ink via-espresso to-golddark text-gold flex items-center justify-center font-serif text-xl sm:text-2xl font-bold border border-gold/40 shadow-lux group-hover:rotate-12 transition duration-500">S</span>
+      <span class="leading-none">
+        <span class="block font-serif font-bold text-xl sm:text-2xl tracking-[0.18em] text-ink">SOWZZUY</span>
+        <span class="block text-[9px] sm:text-[10px] tracking-[0.32em] uppercase text-golddark font-medium">Premium Beauty</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-[14px] font-medium tracking-wide">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#shop" class="nav-link">Shop</a>
+      <a href="#shop" onclick="setFilter('face');return false;" class="nav-link">Face Care</a>
+      <a href="#shop" onclick="setFilter('hair');return false;" class="nav-link">Hair Care</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="flex items-center gap-2 sm:gap-3">
+      <button onclick="openSearch()" class="w-10 h-10 rounded-full border border-ink/10 bg-white flex items-center justify-center hover:bg-ink hover:text-white hover:border-ink transition" aria-label="Search"><i class="fa-solid fa-magnifying-glass text-sm"></i></button>
+      <button onclick="toggleWishlistInfo()" class="hidden sm:flex w-10 h-10 rounded-full border border-ink/10 bg-white items-center justify-center hover:bg-ink hover:text-white transition relative" aria-label="Wishlist">
+        <i class="fa-regular fa-heart text-sm"></i>
+        <span id="wishCount" class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-rose text-white text-[10px] flex items-center justify-center font-bold">0</span>
+      </button>
+      <button onclick="openCart()" class="h-10 pl-3 pr-4 rounded-full bg-ink text-white flex items-center gap-2 hover:bg-golddark transition btn-lux" aria-label="Cart">
+        <i class="fa-solid fa-bag-shopping text-sm"></i>
+        <span class="text-sm font-medium hidden sm:inline">Cart</span>
+        <span id="cartCount" class="min-w-[20px] h-5 px-1 rounded-full bg-gold text-ink text-[11px] flex items-center justify-center font-bold">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileOverlay" class="overlay fixed inset-0 bg-ink/60 backdrop-blur-sm z-[60] opacity-0 pointer-events-none" onclick="closeMobile()"></div>
+<aside id="mobileMenu" class="drawer fixed top-0 left-0 h-full w-[86%] max-w-[340px] bg-[#FFFCF8] z-[61] -translate-x-full flex flex-col shadow-lux">
+  <div class="p-6 flex items-center justify-between border-b border-gold/20">
+    <span class="font-serif font-bold text-xl tracking-[0.15em]">SOWZZUY</span>
+    <button onclick="closeMobile()" class="w-9 h-9 rounded-full bg-ink text-white flex items-center justify-center"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav class="p-6 flex flex-col gap-1 text-[16px] font-medium overflow-y-auto">
+    <a href="#home" onclick="closeMobile()" class="py-3 border-b border-ink/5 flex justify-between items-center">Home <i class="fa-solid fa-chevron-right text-xs text-gold"></i></a>
+    <a href="#shop" onclick="closeMobile()" class="py-3 border-b border-ink/5 flex justify-between items-center">Shop All <i class="fa-solid fa-chevron-right text-xs text-gold"></i></a>
+    <a href="#shop" onclick="setFilter('face');closeMobile();return false;" class="py-3 border-b border-ink/5 flex justify-between items-center">Face Care <i class="fa-solid fa-chevron-right text-xs text-gold"></i></a>
+    <a href="#shop" onclick="setFilter('hair');closeMobile();return false;" class="py-3 border-b border-ink/5 flex justify-between items-center">Hair Care <i class="fa-solid fa-chevron-right text-xs text-gold"></i></a>
+    <a href="#about" onclick="closeMobile()" class="py-3 border-b border-ink/5 flex justify-between items-center">About <i class="fa-solid fa-chevron-right text-xs text-gold"></i></a>
+    <a href="#reviews" onclick="closeMobile()" class="py-3 border-b border-ink/5 flex justify-between items-center">Reviews <i class="fa-solid fa-chevron-right text-xs text-gold"></i></a>
+    <a href="#faq" onclick="closeMobile()" class="py-3 border-b border-ink/5 flex justify-between items-center">FAQ <i class="fa-solid fa-chevron-right text-xs text-gold"></i></a>
+    <a href="#contact" onclick="closeMobile()" class="py-3 flex justify-between items-center">Contact <i class="fa-solid fa-chevron-right text-xs text-gold"></i></a>
+  </nav>
+  <div class="mt-auto p-6 bg-cream border-t border-gold/20">
+    <p class="text-xs tracking-[0.2em] uppercase text-golddark mb-2">Need Help?</p>
+    <p class="font-serif text-lg">care@sowzzuy.in</p>
+    <p class="text-sm text-ink/60">Mon–Sat, 10am–7pm IST</p>
+    <button onclick="closeMobile();openCart();" class="mt-4 w-full py-3 rounded-full bg-ink text-white font-medium tracking-wide btn-lux">View Cart • <span id="cartCountMobile">0</span> Items</button>
+  </div>
+</aside>
+
+<!-- SEARCH OVERLAY -->
+<div id="searchOverlay" class="fixed inset-0 z-[70] bg-ink/70 backdrop-blur-md opacity-0 pointer-events-none overlay flex items-start justify-center pt-[8vh] px-4">
+  <div class="w-full max-w-2xl bg-[#FFFCF8] rounded-3xl shadow-lux overflow-hidden">
+    <div class="p-5 sm:p-6 border-b border-gold/20 flex items-center gap-3">
+      <span class="w-10 h-10 rounded-full bg-cream flex items-center justify-center text-golddark"><i class="fa-solid fa-magnifying-glass"></i></span>
+      <input id="searchInput" oninput="liveSearch(this.value)" type="text" placeholder="Search Face Serum, Face Wash, Hair Serum..." class="flex-1 bg-transparent text-lg placeholder:text-ink/35 border-0" style="box-shadow:none !important;">
+      <button onclick="closeSearch()" class="w-9 h-9 rounded-full bg-ink text-white flex items-center justify-center hover:bg-rose transition"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="p-5 sm:p-6 max-h-[55vh] overflow-y-auto">
+      <p class="text-[11px] tracking-[0.25em] uppercase text-ink/50 mb-4">Popular Searches</p>
+      <div class="flex flex-wrap gap-2 mb-6">
+        <button onclick="quickSearch('Face Serum')" class="px-4 py-2 rounded-full border border-ink/10 text-sm hover:bg-ink hover:text-white transition">Face Serum</button>
+        <button onclick="quickSearch('Face Wash')" class="px-4 py-2 rounded-full border border-ink/10 text-sm hover:bg-ink hover:text-white transition">Face Wash</button>
+        <button onclick="quickSearch('Hair Serum')" class="px-4 py-2 rounded-full border border-ink/10 text-sm hover:bg-ink hover:text-white transition">Hair Serum</button>
+        <button onclick="quickSearch('SOWZZUY')" class="px-4 py-2 rounded-full border border-ink/10 text-sm hover:bg-ink hover:text-white transition">All SOWZZUY</button>
+      </div>
+      <div id="searchResults" class="grid gap-3"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CART DRAWER -->
+<div id="cartOverlay" class="overlay fixed inset-0 bg-ink/60 backdrop-blur-sm z-[60] opacity-0 pointer-events-none" onclick="closeCart()"></div>
+<aside id="cartDrawer" class="drawer fixed top-0 right-0 h-full w-full max-w-[430px] bg-[#FFFCF8] z-[61] translate-x-full flex flex-col shadow-lux">
+  <div class="p-5 sm:p-6 flex items-center justify-between border-b border-gold/20 bg-gradient-to-r from-cream to-blush">
+    <div>
+      <h3 class="font-serif text-xl font-bold">Your Bag <span id="cartHeadCount" class="text-sm font-sans font-normal text-ink/50">(0)</span></h3>
+      <p class="text-xs text-ink/50 tracking-wide">SOWZZUY Premium Beauty</p>
+    </div>
+    <button onclick="closeCart()" class="w-9 h-9 rounded-full bg-ink text-white flex items-center justify-center hover:bg-rose transition"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="px-5 sm:px-6 py-3 bg-ink text-white text-xs tracking-wide flex items-center gap-2">
+    <i class="fa-solid fa-truck-fast text-gold"></i><span id="shipMsg">Add items worth ₹499 for FREE shipping</span>
+    <div class="flex-1 h-1.5 bg-white/15 rounded-full overflow-hidden ml-2"><div id="shipBar" class="h-full bg-gradient-to-r from-gold to-rose rounded-full transition-all duration-700" style="width:0%"></div></div>
+  </div>
+  <div id="cartItems" class="flex-1 overflow-y-auto p-5 sm:p-6 space-y-4"></div>
+  <div class="p-5 sm:p-6 border-t border-gold/20 bg-white/70 glass">
+    <div class="flex justify-between text-sm mb-1"><span class="text-ink/60">Subtotal</span><span id="cartSubtotal" class="font-semibold">₹0</span></div>
+    <div class="flex justify-between text-sm mb-1"><span class="text-ink/60">Shipping</span><span id="cartShipping" class="font-semibold text-sage">—</span></div>
+    <div class="flex justify-between text-sm mb-3"><span class="text-ink/60">You Save</span><span id="cartSave" class="font-semibold text-rose">₹0</span></div>
+    <div class="flex justify-between items-center py-3 border-t border-dashed border-ink/15 mb-4"><span class="font-serif font-bold text-lg">Total</span><span id="cartTotal" class="font-serif font-bold text-2xl">₹0</span></div>
+    <button onclick="openCheckout()" class="w-full py-4 rounded-full bg-ink text-white font-medium tracking-[0.12em] uppercase text-sm btn-lux flex items-center justify-center gap-2"><i class="fa-solid fa-lock text-xs"></i> Secure Checkout</button>
+    <button onclick="closeCart()" class="w-full mt-2 py-3 rounded-full border border-ink/15 text-sm font-medium hover:bg-cream transition">Continue Shopping</button>
+    <div class="flex items-center justify-center gap-3 mt-3 text-[11px] text-ink/50"><span><i class="fa-solid fa-shield-halved"></i> 100% Secure</span><span>•</span><span>COD Available</span><span>•</span><span>Easy 7-Day Returns</span></div>
+  </div>
+</aside>
+
+<main>
+<!-- HERO -->
+<section id="home" class="relative overflow-hidden">
+  <div class="blob w-[500px] h-[500px] bg-[#F3D9A0] -top-40 -left-40"></div>
+  <div class="blob w-[600px] h-[600px] bg-[#E9A88A]/60 top-20 -right-40"></div>
+  <div class="blob w-[300px] h-[300px] bg-[#8AA899]/30 bottom-0 left-1/3"></div>
+  <div class="absolute inset-0 hero-pattern opacity-60 pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14 lg:pt-20 pb-12 lg:pb-24 grid lg:grid-cols-2 gap-12 lg:gap-8 items-center relative">
+    <!-- Left -->
+    <div class="reveal active">
+      <div class="inline-flex items-center gap-2 pl-1 pr-4 py-1 rounded-full bg-white border border-gold/30 shadow-card mb-6">
+        <span class="px-3 py-1 rounded-full bg-gradient-to-r from-gold to-rose text-white text-[11px] font-bold tracking-[0.15em] uppercase">New</span>
+        <span class="text-[12px] sm:text-[13px] tracking-wide text-ink/70 font-medium">PREMIUM BEAUTY & PERSONAL CARE • INDIA</span>
+      </div>
+      <h1 class="font-serif text-[42px] leading-[1.05] sm:text-6xl lg:text-[68px] font-bold text-ink">
+        Elevate Your<br>
+        <span class="italic font-medium gold-text">Everyday Beauty</span>
+      </h1>
+      <p class="mt-5 text-base sm:text-lg text-ink/60 max-w-[480px] leading-relaxed font-light">Premium beauty essentials crafted for your everyday skincare and haircare routine. Gentle, luxurious & made for Indian skin and hair.</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
+        <a href="#shop" class="px-8 py-4 rounded-full bg-ink text-white font-medium tracking-[0.08em] uppercase text-sm btn-lux text-center flex items-center justify-center gap-2">Shop Now <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        <a href="#featured" class="px-8 py-4 rounded-full border-[1.5px] border-ink/80 font-medium tracking-[0.08em] uppercase text-sm text-center hover:bg-ink hover:text-white transition duration-300 flex items-center justify-center gap-2">Explore Products</a>
+      </div>
+      <div class="mt-8 flex items-center gap-4">
+        <div class="flex -space-x-3">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-10 h-10 rounded-full border-2 border-white object-cover" alt="customer">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" class="w-10 h-10 rounded-full border-2 border-white object-cover" alt="customer">
+          <img src="https://randomuser.me/api/portraits/women/12.jpg" class="w-10 h-10 rounded-full border-2 border-white object-cover" alt="customer">
+          <span class="w-10 h-10 rounded-full bg-ink text-white border-2 border-white flex items-center justify-center text-[10px] font-bold">12k+</span>
+        </div>
+        <div>
+          <div class="flex gap-0.5 text-[13px] star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span class="text-ink font-semibold ml-1">4.8/5</span></div>
+          <p class="text-[13px] text-ink/55">Loved by 12,000+ happy customers</p>
+        </div>
+      </div>
+      <div class="mt-8 grid grid-cols-3 gap-4 max-w-[460px]">
+        <div class="bg-white/70 glass rounded-2xl p-3 sm:p-4 text-center border border-gold/20"><p class="font-serif font-bold text-xl sm:text-2xl">3</p><p class="text-[11px] tracking-wider uppercase text-ink/50">Premium Essentials</p></div>
+        <div class="bg-white/70 glass rounded-2xl p-3 sm:p-4 text-center border border-gold/20"><p class="font-serif font-bold text-xl sm:text-2xl">100%</p><p class="text-[11px] tracking-wider uppercase text-ink/50">Everyday Care</p></div>
+        <div class="bg-white/70 glass rounded-2xl p-3 sm:p-4 text-center border border-gold/20"><p class="font-serif font-bold text-xl sm:text-2xl">COD</p><p class="text-[11px] tracking-wider uppercase text-ink/50">Pan-India</p></div>
+      </div>
+    </div>
+
+    <!-- Right Visual -->
+    <div class="relative flex justify-center lg:justify-end reveal active">
+      <div class="relative w-full max-w-[480px]">
+        <div class="absolute -inset-4 bg-gradient-to-br from-gold/30 via-rose/20 to-transparent rounded-[40px] blur-2xl"></div>
+        <div class="arch img-zoom relative overflow-hidden border-[6px] border-white shadow-lux gold-border bg-cream">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1000&auto=format&fit=crop" alt="SOWZZUY Premium Beauty" class="w-full h-[480px] sm:h-[560px] object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent"></div>
+          <div class="absolute bottom-5 left-5 right-5 glass rounded-2xl p-4 flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=200&auto=format&fit=crop" class="w-12 h-12 rounded-xl object-cover" alt="serum">
+            <div class="flex-1"><p class="text-[13px] font-semibold leading-tight">SOWZZUY Face Serum</p><p class="text-[12px] text-ink/55">Bestseller • <span class="star">★★★★★</span> 4.8</p></div>
+            <span class="font-serif font-bold">₹499</span>
+          </div>
+        </div>
+        <!-- Floating badges -->
+        <div class="float-slow absolute -left-4 sm:-left-10 top-16 glass border border-white/60 rounded-2xl px-4 py-3 shadow-lux flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-rose text-white flex items-center justify-center"><i class="fa-solid fa-truck-fast text-sm"></i></span>
+          <div><p class="text-[13px] font-bold leading-none">Free Shipping</p><p class="text-[11px] text-ink/55 mt-1">On orders ₹499+</p></div>
+        </div>
+        <div class="float-slow2 absolute -right-2 sm:-right-6 bottom-32 glass border border-white/60 rounded-2xl px-4 py-3 shadow-lux flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-ink text-gold flex items-center justify-center"><i class="fa-solid fa-leaf text-sm"></i></span>
+          <div><p class="text-[13px] font-bold leading-none">Carefully Selected</p><p class="text-[11px] text-ink/55 mt-1">Quality Ingredients</p></div>
+        </div>
+        <div class="absolute -top-6 right-8 w-24 h-24 hidden sm:flex items-center justify-center">
+          <svg viewBox="0 0 100 100" class="w-full h-full spin-slow absolute inset-0"><defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text class="fill-ink" style="font-size:10.5px; letter-spacing:2.5px; font-weight:600;"><textPath href="#circ">SOWZZUY • PREMIUM • BEAUTY • </textPath></text></svg>
+          <span class="w-11 h-11 rounded-full bg-gradient-to-br from-gold to-rosedeep text-white flex items-center justify-center shadow-lux"><i class="fa-solid fa-crown text-sm"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trust strip -->
+  <div class="border-y border-gold/20 bg-white/60 glass">
+    <div class="max-w-7xl mx-auto px-4 py-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div class="flex items-center justify-center gap-2 text-[13px] font-medium tracking-wide text-ink/70"><i class="fa-solid fa-shield-halved text-gold"></i> 100% Genuine Products</div>
+      <div class="flex items-center justify-center gap-2 text-[13px] font-medium tracking-wide text-ink/70"><i class="fa-solid fa-indian-rupee-sign text-gold"></i> COD Available</div>
+      <div class="flex items-center justify-center gap-2 text-[13px] font-medium tracking-wide text-ink/70"><i class="fa-solid fa-rotate-left text-gold"></i> 7-Day Easy Returns</div>
+      <div class="flex items-center justify-center gap-2 text-[13px] font-medium tracking-wide text-ink/70"><i class="fa-solid fa-headset text-gold"></i> Customer-Focused Support</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="bg-ink text-white py-3 overflow-hidden relative">
+  <div class="marquee-track text-[12px] sm:text-[13px] tracking-[0.22em] uppercase font-medium">
+    <div class="flex items-center shrink-0">
+      <span class="mx-6">✦ SOWZZUY Face Serum ₹499</span><span class="mx-6 text-gold">✦ SOWZZUY Face Wash ₹399</span><span class="mx-6">✦ SOWZZUY Hair Serum ₹499</span><span class="mx-6 text-gold">✦ Free Shipping ₹499+</span><span class="mx-6">✦ COD Available</span><span class="mx-6 text-gold">✦ Premium Beauty & Personal Care</span>
+    </div>
+    <div class="flex items-center shrink-0">
+      <span class="mx-6">✦ SOWZZUY Face Serum ₹499</span><span class="mx-6 text-gold">✦ SOWZZUY Face Wash ₹399</span><span class="mx-6">✦ SOWZZUY Hair Serum ₹499</span><span class="mx-6 text-gold">✦ Free Shipping ₹499+</span><span class="mx-6">✦ COD Available</span><span class="mx-6 text-gold">✦ Premium Beauty & Personal Care</span>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<section id="featured" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+  <div class="text-center max-w-2xl mx-auto reveal">
+    <p class="text-[11px] tracking-[0.35em] uppercase text-golddark font-semibold mb-3">— Curated For You —</p>
+    <h2 class="font-serif text-3xl sm:text-5xl font-bold">Featured <span class="italic gold-text font-medium">Products</span></h2>
+    <p class="mt-4 text-ink/55">Three everyday essentials. One luxurious ritual. Discover why thousands choose SOWZZUY for their daily glow.</p>
+  </div>
+  <div id="featuredGrid" class="mt-12 grid md:grid-cols-3 gap-6 lg:gap-8"></div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section id="why" class="relative bg-gradient-to-b from-cream via-blush to-[#FFFCF8] py-16 sm:py-24 overflow-hidden">
+  <div class="blob w-[400px] h-[400px] bg-gold/25 -left-32 top-10"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-golddark font-semibold mb-3">— The SOWZZUY Promise —</p>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold">Why Choose <span class="italic gold-text font-medium">SOWZZUY?</span></h2>
+      <p class="mt-4 text-ink/55">A modern Indian beauty brand built on quality, care and trust — designed for your everyday routine.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="reveal bg-white rounded-[26px] p-7 border border-gold/20 shadow-card card-hover group">
+        <span class="w-14 h-14 rounded-2xl bg-gradient-to-br from-ink to-espresso text-gold flex items-center justify-center text-xl mb-5 group-hover:scale-110 group-hover:rotate-6 transition duration-500"><i class="fa-solid fa-gem"></i></span>
+        <h3 class="font-serif text-xl font-bold mb-2">Premium Quality</h3>
+        <p class="text-sm text-ink/55 leading-relaxed">Every SOWZZUY formula is crafted to premium standards with strict quality checks, elegant textures and skin-loving finishes for daily indulgence.</p>
+        <div class="mt-4 h-1 w-10 bg-gradient-to-r from-gold to-rose rounded-full group-hover:w-full transition-all duration-500"></div>
+      </div>
+      <div class="reveal reveal-delay-1 bg-white rounded-[26px] p-7 border border-gold/20 shadow-card card-hover group">
+        <span class="w-14 h-14 rounded-2xl bg-gradient-to-br from-sage to-emerald-800 text-white flex items-center justify-center text-xl mb-5 group-hover:scale-110 group-hover:rotate-6 transition duration-500"><i class="fa-solid fa-flask-vial"></i></span>
+        <h3 class="font-serif text-xl font-bold mb-2">Carefully Selected Ingredients</h3>
+        <p class="text-sm text-ink/55 leading-relaxed">Thoughtfully chosen ingredients like Hyaluronic Acid, Niacinamide, Aloe Vera, Vitamin E and Argan Oil — balanced for everyday beauty care.</p>
+        <div class="mt-4 h-1 w-10 bg-gradient-to-r from-sage to-emerald-700 rounded-full group-hover:w-full transition-all duration-500"></div>
+      </div>
+      <div class="reveal reveal-delay-2 bg-white rounded-[26px] p-7 border border-gold/20 shadow-card card-hover group">
+        <span class="w-14 h-14 rounded-2xl bg-gradient-to-br from-rose to-rosedeep text-white flex items-center justify-center text-xl mb-5 group-hover:scale-110 group-hover:rotate-6 transition duration-500"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+        <h3 class="font-serif text-xl font-bold mb-2">Everyday Beauty Care</h3>
+        <p class="text-sm text-ink/55 leading-relaxed">Simple 3-step rituals for face and hair that fit busy Indian lifestyles. Lightweight, non-greasy textures made for daily morning & evening use.</p>
+        <div class="mt-4 h-1 w-10 bg-gradient-to-r from-rose to-rosedeep rounded-full group-hover:w-full transition-all duration-500"></div>
+      </div>
+      <div class="reveal reveal-delay-3 bg-white rounded-[26px] p-7 border border-gold/20 shadow-card card-hover group">
+        <span class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold to-golddark text-white flex items-center justify-center text-xl mb-5 group-hover:scale-110 group-hover:rotate-6 transition duration-500"><i class="fa-solid fa-heart"></i></span>
+        <h3 class="font-serif text-xl font-bold mb-2">Customer-Focused Brand</h3>
+        <p class="text-sm text-ink/55 leading-relaxed">COD, fast dispatch, easy 7-day returns and real human support. Your satisfaction is at the heart of everything SOWZZUY does.</p>
+        <div class="mt-4 h-1 w-10 bg-gradient-to-r from-gold to-golddark rounded-full group-hover:w-full transition-all duration-500"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+  <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 reveal">
+    <div>
+      <p class="text-[11px] tracking-[0.35em] uppercase text-golddark font-semibold mb-3">— Shop SOWZZUY —</p>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold">Shop <span class="italic gold-text font-medium">All Products</span></h2>
+      <p class="mt-3 text-ink/55 max-w-lg">Filter by Face Care or Hair Care. All prices in INR inclusive of taxes.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+      <div class="relative">
+        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-ink/30 text-sm"></i>
+        <input id="shopSearch" oninput="renderShop()" type="text" placeholder="Search products..." class="pl-11 pr-4 py-3 rounded-full border border-ink/12 bg-white text-sm w-full sm:w-[220px]">
+      </div>
+      <select id="sortSelect" onchange="renderShop()" class="px-5 py-3 rounded-full border border-ink/12 bg-white text-sm font-medium cursor-pointer">
+        <option value="featured">Sort: Featured</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+        <option value="rating">Top Rated</option>
+      </select>
+    </div>
+  </div>
+  <div class="mt-8 flex flex-wrap gap-3 reveal">
+    <button onclick="setFilter('all')" data-filter="all" class="filter-pill active px-6 py-2.5 rounded-full border border-ink/15 text-sm font-medium bg-white">All Products <span class="ml-1 text-xs opacity-60">(3)</span></button>
+    <button onclick="setFilter('face')" data-filter="face" class="filter-pill px-6 py-2.5 rounded-full border border-ink/15 text-sm font-medium bg-white"><i class="fa-regular fa-face-smile mr-1.5 text-rose"></i>Face Care <span class="ml-1 text-xs opacity-60">(2)</span></button>
+    <button onclick="setFilter('hair')" data-filter="hair" class="filter-pill px-6 py-2.5 rounded-full border border-ink/15 text-sm font-medium bg-white"><i class="fa-solid fa-wand-magic-sparkles mr-1.5 text-gold"></i>Hair Care <span class="ml-1 text-xs opacity-60">(1)</span></button>
+    <span id="shopCount" class="ml-auto self-center text-sm text-ink/50">Showing 3 products</span>
+  </div>
+  <div id="shopGrid" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+</section>
+
+<!-- PRODUCT DETAILS 1 -->
+<section id="product-1" class="bg-ink text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-[0.07]" style="background-image:radial-gradient(#C9A15A 1.5px, transparent 1.5px); background-size:26px 26px;"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid lg:grid-cols-2 gap-12 items-start relative">
+    <div class="reveal lg:sticky lg:top-28">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-gold font-semibold mb-3">01 — Face Care Bestseller</p>
+      <div class="rounded-[28px] overflow-hidden border border-white/10 shadow-lux img-zoom relative">
+        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=900&auto=format&fit=crop" alt="SOWZZUY Face Serum" class="w-full h-[420px] sm:h-[520px] object-cover">
+        <span class="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-gradient-to-r from-gold to-rose text-white text-[11px] font-bold tracking-[0.15em] uppercase">Bestseller</span>
+        <span class="absolute top-4 right-4 w-12 h-12 rounded-full bg-white text-ink flex flex-col items-center justify-center text-[10px] font-bold leading-none shadow-lux">38%<span class="text-[8px] font-medium">OFF</span></span>
+      </div>
+      <div class="mt-4 grid grid-cols-3 gap-3">
+        <img src="https://images.unsplash.com/photo-1617897903246-719242758050?q=80&w=400&auto=format&fit=crop" class="h-24 sm:h-28 w-full object-cover rounded-2xl border border-white/10" alt="texture">
+        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?q=80&w=400&auto=format&fit=crop" class="h-24 sm:h-28 w-full object-cover rounded-2xl border border-white/10" alt="routine">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=400&auto=format&fit=crop" class="h-24 sm:h-28 w-full object-cover rounded-2xl border border-white/10" alt="glow">
+      </div>
+    </div>
+    <div class="reveal">
+      <nav class="text-xs text-white/50 tracking-wide mb-3">Home / Face Care / <span class="text-gold">SOWZZUY Face Serum</span></nav>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold leading-tight">SOWZZUY <span class="italic gold-text">Face Serum</span></h2>
+      <div class="mt-3 flex items-center gap-3 flex-wrap">
+        <span class="flex gap-0.5 star text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+        <span class="text-sm text-white/70 font-medium">4.8 • 1,247 reviews</span>
+        <span class="text-xs px-3 py-1 rounded-full bg-white/10 border border-white/10">30 ml • All Skin Types</span>
+      </div>
+      <div class="mt-4 flex items-end gap-3">
+        <span class="font-serif text-4xl sm:text-5xl font-bold">₹499</span>
+        <span class="text-white/40 line-through text-lg mb-1">₹799</span>
+        <span class="mb-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-400/20">Save ₹300</span>
+      </div>
+      <p class="text-[11px] text-white/40 mt-1">Inclusive of all taxes • MRP ₹799</p>
+      <p class="mt-5 text-white/70 leading-relaxed">A lightweight everyday face serum designed to complement your daily skincare ritual. With a silky, fast-absorbing texture, it layers beautifully under moisturiser and makeup — leaving skin feeling hydrated, smooth and refreshed.</p>
+      <div class="mt-6 grid sm:grid-cols-2 gap-3">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-4"><p class="text-gold text-sm mb-1"><i class="fa-solid fa-droplet"></i></p><p class="font-semibold text-sm">Hydration-Focused</p><p class="text-xs text-white/55 mt-1">Helps skin feel soft & moisturised.</p></div>
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-4"><p class="text-gold text-sm mb-1"><i class="fa-solid fa-feather"></i></p><p class="font-semibold text-sm">Lightweight Feel</p><p class="text-xs text-white/55 mt-1">Non-sticky, quick-absorbing texture.</p></div>
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-4"><p class="text-gold text-sm mb-1"><i class="fa-solid fa-sun"></i></p><p class="font-semibold text-sm">AM + PM Ritual</p><p class="text-xs text-white/55 mt-1">Designed for daily morning & night use.</p></div>
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-4"><p class="text-gold text-sm mb-1"><i class="fa-solid fa-layer-group"></i></p><p class="font-semibold text-sm">Layers Easily</p><p class="text-xs text-white/55 mt-1">Works under moisturiser & sunscreen.</p></div>
+      </div>
+      <div class="mt-6 bg-white/5 border border-white/10 rounded-2xl p-5">
+        <h4 class="font-serif font-bold text-lg mb-3 flex items-center gap-2"><i class="fa-solid fa-list-check text-gold text-sm"></i> How to Use</h4>
+        <ol class="space-y-2.5 text-sm text-white/70">
+          <li class="flex gap-3"><span class="w-6 h-6 shrink-0 rounded-full bg-gold text-ink text-xs font-bold flex items-center justify-center">1</span> Cleanse face with SOWZZUY Face Wash & pat dry.</li>
+          <li class="flex gap-3"><span class="w-6 h-6 shrink-0 rounded-full bg-gold text-ink text-xs font-bold flex items-center justify-center">2</span> Apply 2–3 drops to face & neck, avoiding eye area.</li>
+          <li class="flex gap-3"><span class="w-6 h-6 shrink-0 rounded-full bg-gold text-ink text-xs font-bold flex items-center justify-center">3</span> Gently massage in upward motions till absorbed.</li>
+          <li class="flex gap-3"><span class="w-6 h-6 shrink-0 rounded-full bg-gold text-ink text-xs font-bold flex items-center justify-center">4</span> Follow with moisturiser; use sunscreen in daytime.</li>
+        </ol>
+      </div>
+      <div class="mt-4 grid sm:grid-cols-2 gap-4">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+          <h4 class="font-semibold text-sm tracking-wide uppercase text-gold mb-3">Key Features</h4>
+          <ul class="text-sm text-white/70 space-y-2"><li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>30ml dropper bottle</li><li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Suitable for all skin types</li><li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Everyday lightweight formula</li><li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Unisex daily essential</li></ul>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+          <h4 class="font-semibold text-sm tracking-wide uppercase text-gold mb-3">Ingredients</h4>
+          <div class="flex flex-wrap gap-2 text-xs"><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10">Niacinamide</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10">Hyaluronic Acid</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10">Aloe Vera</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10">Vitamin E</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10">Glycerin</span></div>
+          <p class="text-[11px] text-white/40 mt-3">Patch test recommended. For external use only.</p>
+        </div>
+      </div>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <div class="flex items-center rounded-full border border-white/15 bg-white/5 overflow-hidden">
+          <button onclick="detailQty(1,-1)" class="qty-btn w-12 h-[52px] text-lg">−</button>
+          <span id="dqty-1" class="w-10 text-center font-bold">1</span>
+          <button onclick="detailQty(1,1)" class="qty-btn w-12 h-[52px] text-lg">+</button>
+        </div>
+        <button onclick="addToCart(1, getDQty(1))" class="flex-1 py-4 rounded-full border border-gold/60 text-gold font-semibold tracking-wider uppercase text-sm hover:bg-gold hover:text-ink transition btn-lux"><i class="fa-solid fa-bag-shopping mr-2"></i>Add to Cart</button>
+        <button onclick="buyNow(1, getDQty(1))" class="flex-1 py-4 rounded-full bg-gradient-to-r from-gold to-rose text-white font-semibold tracking-wider uppercase text-sm btn-lux">Buy Now • ₹499</button>
+      </div>
+      <div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-white/55"><span><i class="fa-solid fa-truck-fast text-gold mr-1"></i> Dispatch in 24–48 hrs</span><span><i class="fa-solid fa-rotate-left text-gold mr-1"></i> 7-Day Easy Returns</span><span><i class="fa-solid fa-money-bill-wave text-gold mr-1"></i> COD Available</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT DETAILS 2 -->
+<section id="product-2" class="bg-blush relative overflow-hidden">
+  <div class="blob w-[450px] h-[450px] bg-rose/40 -right-32 top-20"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid lg:grid-cols-2 gap-12 items-start relative">
+    <div class="reveal lg:sticky lg:top-28 order-1">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-rosedeep font-semibold mb-3">02 — Gentle Daily Cleanser</p>
+      <div class="rounded-[28px] overflow-hidden border border-white shadow-lux img-zoom relative bg-white">
+        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=900&auto=format&fit=crop" alt="SOWZZUY Face Wash" class="w-full h-[420px] sm:h-[520px] object-cover">
+        <span class="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-ink text-white text-[11px] font-bold tracking-[0.15em] uppercase">Everyday Essential</span>
+        <span class="absolute top-4 right-4 w-12 h-12 rounded-full bg-rosedeep text-white flex flex-col items-center justify-center text-[10px] font-bold leading-none shadow-lux">33%<span class="text-[8px] font-medium">OFF</span></span>
+      </div>
+      <div class="mt-4 grid grid-cols-3 gap-3">
+        <img src="https://images.unsplash.com/photo-1570554886111-e80fcca6a029?q=80&w=400&auto=format&fit=crop" class="h-24 sm:h-28 w-full object-cover rounded-2xl border border-white shadow" alt="foam">
+        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?q=80&w=400&auto=format&fit=crop" class="h-24 sm:h-28 w-full object-cover rounded-2xl border border-white shadow" alt="cleanse">
+        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=400&auto=format&fit=crop" class="h-24 sm:h-28 w-full object-cover rounded-2xl border border-white shadow" alt="fresh">
+      </div>
+    </div>
+    <div class="reveal order-2">
+      <nav class="text-xs text-ink/40 tracking-wide mb-3">Home / Face Care / <span class="text-rosedeep font-medium">SOWZZUY Face Wash</span></nav>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold leading-tight">SOWZZUY <span class="italic gold-text">Face Wash</span></h2>
+      <div class="mt-3 flex items-center gap-3 flex-wrap">
+        <span class="flex gap-0.5 star text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+        <span class="text-sm text-ink/60 font-medium">4.7 • 986 reviews</span>
+        <span class="text-xs px-3 py-1 rounded-full bg-white border border-gold/25">100 ml • Daily Use</span>
+      </div>
+      <div class="mt-4 flex items-end gap-3">
+        <span class="font-serif text-4xl sm:text-5xl font-bold">₹399</span>
+        <span class="text-ink/30 line-through text-lg mb-1">₹599</span>
+        <span class="mb-1.5 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold">Save ₹200</span>
+      </div>
+      <p class="text-[11px] text-ink/40 mt-1">Inclusive of all taxes • MRP ₹599</p>
+      <p class="mt-5 text-ink/60 leading-relaxed">A gentle everyday face wash that helps remove dirt, excess oil and daily impurities. Its soft-lather formula rinses clean without leaving skin feeling stretched — perfect as step one of your SOWZZUY ritual.</p>
+      <div class="mt-6 grid sm:grid-cols-2 gap-3">
+        <div class="bg-white rounded-2xl p-4 border border-gold/20 shadow-sm"><p class="text-rosedeep text-sm mb-1"><i class="fa-solid fa-soap"></i></p><p class="font-semibold text-sm">Soft Daily Lather</p><p class="text-xs text-ink/55 mt-1">Cleanses without over-drying feel.</p></div>
+        <div class="bg-white rounded-2xl p-4 border border-gold/20 shadow-sm"><p class="text-rosedeep text-sm mb-1"><i class="fa-solid fa-leaf"></i></p><p class="font-semibold text-sm">Fresh & Light</p><p class="text-xs text-ink/55 mt-1">Leaves skin feeling fresh & clean.</p></div>
+        <div class="bg-white rounded-2xl p-4 border border-gold/20 shadow-sm"><p class="text-rosedeep text-sm mb-1"><i class="fa-solid fa-arrows-rotate"></i></p><p class="font-semibold text-sm">AM + PM Friendly</p><p class="text-xs text-ink/55 mt-1">Ideal for twice-daily cleansing.</p></div>
+        <div class="bg-white rounded-2xl p-4 border border-gold/20 shadow-sm"><p class="text-rosedeep text-sm mb-1"><i class="fa-solid fa-users"></i></p><p class="font-semibold text-sm">For Everyone</p><p class="text-xs text-ink/55 mt-1">Made for daily family skincare.</p></div>
+      </div>
+      <div class="mt-6 bg-white rounded-2xl p-5 border border-gold/20">
+        <h4 class="font-serif font-bold text-lg mb-3 flex items-center gap-2"><i class="fa-solid fa-list-check text-rosedeep text-sm"></i> How to Use</h4>
+        <ol class="space-y-2.5 text-sm text-ink/65">
+          <li class="flex gap-3"><span class="w-6 h-6 shrink-0 rounded-full bg-ink text-white text-xs font-bold flex items-center justify-center">1</span> Wet face with lukewarm water.</li>
+          <li class="flex gap-3"><span class="w-6 h-6 shrink-0 rounded-full bg-ink text-white text-xs font-bold flex items-center justify-center">2</span> Take a coin-sized amount & gently massage for 30–40 seconds.</li>
+          <li class="flex gap-3"><span class="w-6 h-6 shrink-0 rounded-full bg-ink text-white text-xs font-bold flex items-center justify-center">3</span> Rinse thoroughly & pat dry with a soft towel.</li>
+          <li class="flex gap-3"><span class="w-6 h-6 shrink-0 rounded-full bg-ink text-white text-xs font-bold flex items-center justify-center">4</span> Follow with SOWZZUY Face Serum for your routine.</li>
+        </ol>
+      </div>
+      <div class="mt-4 grid sm:grid-cols-2 gap-4">
+        <div class="bg-white rounded-2xl p-5 border border-gold/20">
+          <h4 class="font-semibold text-sm tracking-wide uppercase text-golddark mb-3">Key Features</h4>
+          <ul class="text-sm text-ink/65 space-y-2"><li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>100ml hygiene-sealed tube</li><li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Everyday gentle cleansing</li><li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Suitable for all skin types</li><li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Great for oily & normal skin</li></ul>
+        </div>
+        <div class="bg-white rounded-2xl p-5 border border-gold/20">
+          <h4 class="font-semibold text-sm tracking-wide uppercase text-golddark mb-3">Ingredients</h4>
+          <div class="flex flex-wrap gap-2 text-xs"><span class="px-3 py-1.5 rounded-full bg-cream border border-gold/20">Aloe Vera</span><span class="px-3 py-1.5 rounded-full bg-cream border border-gold/20">Glycerin</span><span class="px-3 py-1.5 rounded-full bg-cream border border-gold/20">Vitamin E</span><span class="px-3 py-1.5 rounded-full bg-cream border border-gold/20">Mild Cleansers</span></div>
+          <p class="text-[11px] text-ink/40 mt-3">Avoid direct eye contact. For external use only.</p>
+        </div>
+      </div>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <div class="flex items-center rounded-full border border-ink/15 bg-white overflow-hidden">
+          <button onclick="detailQty(2,-1)" class="qty-btn w-12 h-[52px] text-lg">−</button>
+          <span id="dqty-2" class="w-10 text-center font-bold">1</span>
+          <button onclick="detailQty(2,1)" class="qty-btn w-12 h-[52px] text-lg">+</button>
+        </div>
+        <button onclick="addToCart(2, getDQty(2))" class="flex-1 py-4 rounded-full border-[1.5px] border-ink font-semibold tracking-wider uppercase text-sm hover:bg-ink hover:text-white transition btn-lux"><i class="fa-solid fa-bag-shopping mr-2"></i>Add to Cart</button>
+        <button onclick="buyNow(2, getDQty(2))" class="flex-1 py-4 rounded-full bg-ink text-white font-semibold tracking-wider uppercase text-sm btn-lux">Buy Now • ₹399</button>
+      </div>
+      <div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-ink/55"><span><i class="fa-solid fa-truck-fast text-golddark mr-1"></i> Dispatch in 24–48 hrs</span><span><i class="fa-solid fa-rotate-left text-golddark mr-1"></i> 7-Day Easy Returns</span><span><i class="fa-solid fa-money-bill-wave text-golddark mr-1"></i> COD Available</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT DETAILS 3 -->
+<section id="product-3" class="bg-gradient-to-br from-[#2A1E22] via-ink to-[#3A2A28] text-white relative overflow-hidden">
+  <div class="blob w-[500px] h-[500px] bg-gold/20 -left-40 bottom-0"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid lg:grid-cols-2 gap-12 items-start relative">
+    <div class="reveal lg:sticky lg:top-28 order-1 lg:order-2">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-gold font-semibold mb-3">03 — Hair Care Luxury</p>
+      <div class="rounded-[28px] overflow-hidden border border-white/10 shadow-lux img-zoom relative">
+        <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?q=80&w=900&auto=format&fit=crop" alt="SOWZZUY Hair Serum" class="w-full h-[420px] sm:h-[520px] object-cover">
+        <span class="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-white text-ink text-[11px] font-bold tracking-[0.15em] uppercase">Salon-Like Shine</span>
+        <span class="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-gold to-rose text-white flex flex-col items-center justify-center text-[10px] font-bold leading-none shadow-lux">38%<span class="text-[8px] font-medium">OFF</span></span>
+      </div>
+      <div class="mt-4 grid grid-cols-3 gap-3">
+        <img src="https://images.unsplash.com/photo-1631730359585-38a4935cbec4?q=80&w=400&auto=format&fit=crop" class="h-24 sm:h-28 w-full object-cover rounded-2xl border border-white/10" alt="hair oil">
+        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=400&auto=format&fit=crop" class="h-24 sm:h-28 w-full object-cover rounded-2xl border border-white/10" alt="hair care">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=400&auto=format&fit=crop" class="h-24 sm:h-28 w-full object-cover rounded-2xl border border-white/10" alt="salon">
+      </div>
+    </div>
+    <div class="reveal order-2 lg:order-1">
+      <nav class="text-xs text-white/50 tracking-wide mb-3">Home / Hair Care / <span class="text-gold">SOWZZUY Hair Serum</span></nav>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold leading-tight">SOWZZUY <span class="italic gold-text">Hair Serum</span></h2>
+      <div class="mt-3 flex items-center gap-3 flex-wrap">
+        <span class="flex gap-0.5 star text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+        <span class="text-sm text-white/70 font-medium">4.9 • 1,532 reviews</span>
+        <span class="text-xs px-3 py-1 rounded-full bg-white/10 border border-white/10">50 ml • All Hair Types</span>
+      </div>
+      <div class="mt-4 flex items-end gap-3">
+        <span class="font-serif text-4xl sm:text-5xl font-bold">₹499</span>
+        <span class="text-white/40 line-through text-lg mb-1">₹799</span>
+        <span class="mb-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-400/20">Save ₹300</span>
+      </div>
+      <p class="text-[11px] text-white/40 mt-1">Inclusive of all taxes • MRP ₹799</p>
+      <p class="mt-5 text-white/70 leading-relaxed">A silky everyday hair serum that helps hair look smoother, shinier and more manageable. Designed to reduce the appearance of frizz and flyaways while adding a lightweight, non-greasy gloss — perfect for daily styling and finishing.</p>
+      <div class="mt-6 grid sm:grid-cols-2 gap-3">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-4"><p class="text-gold text-sm mb-1"><i class="fa-solid fa-wand-magic-sparkles"></i></p><p class="font-semibold text-sm">Smooth Appearance</p><p class="text-xs text-white/55 mt-1">Helps tame look of frizz & flyaways.</p></div>
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-4"><p class="text-gold text-sm mb-1"><i class="fa-solid fa-star"></i></p><p class="font-semibold text-sm">Glossy Shine</p><p class="text-xs text-white/55 mt-1">Adds lightweight luminous finish.</p></div>
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-4"><p class="text-gold text-sm mb-1"><i class="fa-solid fa-scissors"></i></p><p class="font-semibold text-sm">Styling Prep</p><p class="text-xs text-white/55 mt-1">Great before blow-dry or straightening.</p></div>
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-4"><p class="text-gold text-sm mb-1"><i class="fa-solid fa-droplet-slash"></i></p><p class="font-semibold text-sm">Non-Greasy</p><p class="text-xs text-white/55 mt-1">Won't weigh hair down when used right.</p></div>
+      </div>
+      <div class="mt-6 bg-white/5 border border-white/10 rounded-2xl p-5">
+        <h4 class="font-serif font-bold text-lg mb-3 flex items-center gap-2"><i class="fa-solid fa-list-check text-gold text-sm"></i> How to Use</h4>
+        <ol class="space-y-2.5 text-sm text-white/70">
+          <li class="flex gap-3"><span class="w-6 h-6 shrink-0 rounded-full bg-gold text-ink text-xs font-bold flex items-center justify-center">1</span> Take 2–4 drops (or 1 pump) on palms; adjust for hair length.</li>
+          <li class="flex gap-3"><span class="w-6 h-6 shrink-0 rounded-full bg-gold text-ink text-xs font-bold flex items-center justify-center">2</span> Apply evenly to mid-lengths & ends on damp or dry hair.</li>
+          <li class="flex gap-3"><span class="w-6 h-6 shrink-0 rounded-full bg-gold text-ink text-xs font-bold flex items-center justify-center">3</span> Avoid roots to keep hair feeling light & bouncy.</li>
+          <li class="flex gap-3"><span class="w-6 h-6 shrink-0 rounded-full bg-gold text-ink text-xs font-bold flex items-center justify-center">4</span> Style as usual. Reapply a tiny amount for extra shine.</li>
+        </ol>
+      </div>
+      <div class="mt-4 grid sm:grid-cols-2 gap-4">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+          <h4 class="font-semibold text-sm tracking-wide uppercase text-gold mb-3">Key Features</h4>
+          <ul class="text-sm text-white/70 space-y-2"><li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>50ml easy-pump bottle</li><li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>For straight, wavy & curly hair</li><li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Daily use, travel-friendly</li><li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Pleasant premium fragrance</li></ul>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+          <h4 class="font-semibold text-sm tracking-wide uppercase text-gold mb-3">Ingredients</h4>
+          <div class="flex flex-wrap gap-2 text-xs"><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10">Argan Oil</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10">Vitamin E</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10">Jojoba</span><span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10">Silicone Blend</span></div>
+          <p class="text-[11px] text-white/40 mt-3">For external use only. Keep away from eyes.</p>
+        </div>
+      </div>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <div class="flex items-center rounded-full border border-white/15 bg-white/5 overflow-hidden">
+          <button onclick="detailQty(3,-1)" class="qty-btn w-12 h-[52px] text-lg">−</button>
+          <span id="dqty-3" class="w-10 text-center font-bold">1</span>
+          <button onclick="detailQty(3,1)" class="qty-btn w-12 h-[52px] text-lg">+</button>
+        </div>
+        <button onclick="addToCart(3, getDQty(3))" class="flex-1 py-4 rounded-full border border-gold/60 text-gold font-semibold tracking-wider uppercase text-sm hover:bg-gold hover:text-ink transition btn-lux"><i class="fa-solid fa-bag-shopping mr-2"></i>Add to Cart</button>
+        <button onclick="buyNow(3, getDQty(3))" class="flex-1 py-4 rounded-full bg-gradient-to-r from-gold to-rose text-white font-semibold tracking-wider uppercase text-sm btn-lux">Buy Now • ₹499</button>
+      </div>
+      <div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-white/55"><span><i class="fa-solid fa-truck-fast text-gold mr-1"></i> Dispatch in 24–48 hrs</span><span><i class="fa-solid fa-rotate-left text-gold mr-1"></i> 7-Day Easy Returns</span><span><i class="fa-solid fa-money-bill-wave text-gold mr-1"></i> COD Available</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<section class="relative overflow-hidden">
+  <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=1600&auto=format&fit=crop" alt="Beauty Routine" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/70 to-ink/30"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+    <div class="max-w-xl reveal">
+      <p class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-gold text-[11px] tracking-[0.25em] uppercase font-semibold mb-5"><i class="fa-solid fa-sparkles"></i> Limited Time • Flat Discounts</p>
+      <h2 class="font-serif text-4xl sm:text-6xl font-bold text-white leading-[1.05]">Your Beauty<br><span class="italic gold-text">Routine Starts Here</span></h2>
+      <p class="mt-4 text-white/70 text-base sm:text-lg">Complete your everyday ritual with all 3 SOWZZUY essentials. Cleanse, nourish & shine — every single day.</p>
+      <div class="mt-6 flex items-center gap-4 text-white text-sm">
+        <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> Face Wash ₹399</span>
+        <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> Serums ₹499</span>
+      </div>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <button onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})" class="px-9 py-4 rounded-full bg-gradient-to-r from-gold to-rose text-white font-semibold tracking-[0.1em] uppercase text-sm btn-lux shadow-lux">Shop SOWZZUY <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></button>
+        <button onclick="addBundle()" class="px-9 py-4 rounded-full border border-white/40 text-white font-semibold tracking-[0.1em] uppercase text-sm hover:bg-white hover:text-ink transition btn-lux">Add Full Routine • ₹1,397</button>
+      </div>
+      <p class="mt-4 text-xs text-white/50 tracking-wide"><i class="fa-solid fa-truck-fast mr-1"></i> FREE shipping on the complete routine • COD available</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+  <div class="grid lg:grid-cols-2 gap-12 items-center">
+    <div class="reveal relative">
+      <div class="grid grid-cols-2 gap-4">
+        <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=600&auto=format&fit=crop" class="rounded-[26px] h-[280px] sm:h-[360px] w-full object-cover shadow-lux mt-8" alt="SOWZZUY brand">
+        <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=600&auto=format&fit=crop" class="rounded-[26px] h-[280px] sm:h-[360px] w-full object-cover shadow-lux" alt="SOWZZUY model">
+      </div>
+      <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 glass border border-gold/30 rounded-2xl px-6 py-4 shadow-lux flex items-center gap-4 whitespace-nowrap">
+        <span class="font-serif text-3xl font-bold gold-text">Since</span>
+        <span class="text-left leading-tight"><span class="block font-serif font-bold text-xl">2024</span><span class="block text-[11px] tracking-[0.2em] uppercase text-ink/50">Made in India</span></span>
+      </div>
+      <div class="float-slow absolute -top-4 -left-2 sm:left-6 bg-ink text-white rounded-2xl px-4 py-3 shadow-lux flex items-center gap-2 text-sm"><i class="fa-solid fa-crown text-gold"></i> Premium Beauty Brand</div>
+    </div>
+    <div class="reveal">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-golddark font-semibold mb-3">— About SOWZZUY —</p>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold leading-tight">Modern Beauty, <span class="italic gold-text font-medium">Crafted for Everyday You</span></h2>
+      <p class="mt-5 text-ink/60 leading-relaxed">SOWZZUY is a modern beauty and personal-care brand focused on premium everyday skincare and haircare products. Born in India, we believe luxury shouldn't be occasional — it should be part of your daily ritual.</p>
+      <p class="mt-4 text-ink/60 leading-relaxed">From our lightweight Face Serum and gentle Face Wash to our silky Hair Serum, every SOWZZUY essential is thoughtfully formulated, elegantly packaged and priced honestly in INR — so premium self-care fits effortlessly into real life.</p>
+      <div class="mt-6 space-y-3">
+        <div class="flex items-start gap-3"><span class="w-8 h-8 rounded-full bg-cream border border-gold/30 flex items-center justify-center text-golddark shrink-0 mt-0.5"><i class="fa-solid fa-check text-xs"></i></span><p class="text-sm text-ink/70"><strong>Everyday-first formulas</strong> — simple routines, beautiful textures, no complicated 10-step regimes.</p></div>
+        <div class="flex items-start gap-3"><span class="w-8 h-8 rounded-full bg-cream border border-gold/30 flex items-center justify-center text-golddark shrink-0 mt-0.5"><i class="fa-solid fa-check text-xs"></i></span><p class="text-sm text-ink/70"><strong>Honest Indian pricing</strong> — premium experience at ₹399–₹499 with COD & pan-India delivery.</p></div>
+        <div class="flex items-start gap-3"><span class="w-8 h-8 rounded-full bg-cream border border-gold/30 flex items-center justify-center text-golddark shrink-0 mt-0.5"><i class="fa-solid fa-check text-xs"></i></span><p class="text-sm text-ink/70"><strong>Customer-obsessed</strong> — easy returns, fast support and a community of 12,000+ glow-getters.</p></div>
+      </div>
+      <div class="mt-8 grid grid-cols-3 gap-4">
+        <div class="text-center bg-white border border-gold/20 rounded-2xl py-4 shadow-sm"><p class="font-serif font-bold text-2xl sm:text-3xl"><span class="counter" data-target="12000">0</span>+</p><p class="text-[11px] tracking-wider uppercase text-ink/50 mt-1">Happy Customers</p></div>
+        <div class="text-center bg-white border border-gold/20 rounded-2xl py-4 shadow-sm"><p class="font-serif font-bold text-2xl sm:text-3xl"><span class="counter" data-target="500">0</span>+</p><p class="text-[11px] tracking-wider uppercase text-ink/50 mt-1">Cities Served</p></div>
+        <div class="text-center bg-white border border-gold/20 rounded-2xl py-4 shadow-sm"><p class="font-serif font-bold text-2xl sm:text-3xl">4.8<span class="text-gold text-xl">★</span></p><p class="text-[11px] tracking-wider uppercase text-ink/50 mt-1">Average Rating</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="bg-gradient-to-b from-[#FFFCF8] to-cream py-16 sm:py-24 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 reveal">
+      <div>
+        <p class="text-[11px] tracking-[0.35em] uppercase text-golddark font-semibold mb-3">— Customer Love —</p>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold">Loved Across <span class="italic gold-text font-medium">India</span></h2>
+        <p class="mt-3 text-ink/55">Real ratings. <span class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 text-xs font-semibold border border-amber-200">Placeholder testimonials</span> shown below for preview — replace with live reviews at launch.</p>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="scrollReviews(-1)" class="w-12 h-12 rounded-full border border-ink/15 bg-white flex items-center justify-center hover:bg-ink hover:text-white transition"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="scrollReviews(1)" class="w-12 h-12 rounded-full bg-ink text-white flex items-center justify-center hover:bg-golddark transition"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div id="reviewTrack" class="review-track mt-10 flex gap-5 overflow-x-auto pb-4 no-scrollbar reveal"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+  <div class="text-center reveal">
+    <p class="text-[11px] tracking-[0.35em] uppercase text-golddark font-semibold mb-3">— Help Center —</p>
+    <h2 class="font-serif text-3xl sm:text-5xl font-bold">Frequently Asked <span class="italic gold-text font-medium">Questions</span></h2>
+    <p class="mt-3 text-ink/55">Everything you need to know about ordering from SOWZZUY.</p>
+  </div>
+  <div class="mt-10 space-y-3 reveal" id="faqList">
+    <div class="faq-item bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-sm">
+      <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-5 sm:p-6 text-left"><span class="font-semibold text-[15px] sm:text-base">How do I order?</span><span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-cream border border-gold/25 flex items-center justify-center text-sm"><i class="fa-solid fa-plus"></i></span></button>
+      <div class="faq-answer px-5 sm:px-6"><p class="pb-6 text-sm text-ink/60 leading-relaxed">Simply browse the Shop, click <strong>Add to Cart</strong> or <strong>Buy Now</strong> on any SOWZZUY product, review your bag, and proceed to Secure Checkout. Enter your delivery address, choose payment (UPI / Card / COD) and place your order. You'll receive an order confirmation instantly.</p></div>
+    </div>
+    <div class="faq-item bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-sm">
+      <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-5 sm:p-6 text-left"><span class="font-semibold text-[15px] sm:text-base">What payment methods are available?</span><span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-cream border border-gold/25 flex items-center justify-center text-sm"><i class="fa-solid fa-plus"></i></span></button>
+      <div class="faq-answer px-5 sm:px-6"><p class="pb-6 text-sm text-ink/60 leading-relaxed">We support UPI (GPay, PhonePe, Paytm), Credit & Debit Cards (Visa, Mastercard, RuPay), Net Banking, and <strong>Cash on Delivery (COD)</strong> across serviceable pincodes in India. All online payments are processed over secure, encrypted gateways.</p></div>
+    </div>
+    <div class="faq-item bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-sm">
+      <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-5 sm:p-6 text-left"><span class="font-semibold text-[15px] sm:text-base">How can I track my order?</span><span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-cream border border-gold/25 flex items-center justify-center text-sm"><i class="fa-solid fa-plus"></i></span></button>
+      <div class="faq-answer px-5 sm:px-6"><p class="pb-6 text-sm text-ink/60 leading-relaxed">Once your order ships (within 24–48 hours), you'll receive an SMS, WhatsApp and email with your tracking link and AWB number. You can also contact us at <strong>care@sowzzuy.in</strong> with your Order ID for live status. Delivery typically takes 3–7 working days.</p></div>
+    </div>
+    <div class="faq-item bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-sm">
+      <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-5 sm:p-6 text-left"><span class="font-semibold text-[15px] sm:text-base">How should I use the products?</span><span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-cream border border-gold/25 flex items-center justify-center text-sm"><i class="fa-solid fa-plus"></i></span></button>
+      <div class="faq-answer px-5 sm:px-6"><p class="pb-6 text-sm text-ink/60 leading-relaxed"><strong>Face:</strong> Cleanse with SOWZZUY Face Wash, then apply 2–3 drops of SOWZZUY Face Serum morning & night, followed by moisturiser (and sunscreen in daytime). <strong>Hair:</strong> Apply 2–4 drops of SOWZZUY Hair Serum to mid-lengths & ends on damp or dry hair. Always patch-test first and avoid eye contact.</p></div>
+    </div>
+    <div class="faq-item bg-white border border-gold/20 rounded-2xl overflow-hidden shadow-sm">
+      <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-5 sm:p-6 text-left"><span class="font-semibold text-[15px] sm:text-base">What is the return/refund policy?</span><span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-cream border border-gold/25 flex items-center justify-center text-sm"><i class="fa-solid fa-plus"></i></span></button>
+      <div class="faq-answer px-5 sm:px-6"><p class="pb-6 text-sm text-ink/60 leading-relaxed">We offer a <strong>7-day easy return</strong> on unused, sealed products in original packaging. If you receive a damaged, defective or wrong item, share an unboxing photo/video within 48 hours for instant replacement or refund. Refunds are processed to the original payment method within 5–7 working days (COD refunds via UPI/bank transfer).</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-ink text-white relative overflow-hidden">
+  <div class="blob w-[500px] h-[500px] bg-gold/15 -right-40 -top-40"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid lg:grid-cols-5 gap-10 relative">
+    <div class="lg:col-span-2 reveal">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-gold font-semibold mb-3">— Get In Touch —</p>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold leading-tight">We'd Love to <span class="italic gold-text">Hear From You</span></h2>
+      <p class="mt-4 text-white/60">Questions about products, orders or partnerships? Send us a message — we reply within 24 hours.</p>
+      <div class="mt-8 space-y-4">
+        <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4"><span class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold to-rose flex items-center justify-center shrink-0"><i class="fa-solid fa-envelope"></i></span><div><p class="text-xs tracking-widest uppercase text-white/50">Email</p><p class="font-medium">care@sowzzuy.in</p></div></div>
+        <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4"><span class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold to-rose flex items-center justify-center shrink-0"><i class="fa-solid fa-phone"></i></span><div><p class="text-xs tracking-widest uppercase text-white/50">Phone / WhatsApp</p><p class="font-medium">+91 98765 43210</p></div></div>
+        <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4"><span class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold to-rose flex items-center justify-center shrink-0"><i class="fa-solid fa-location-dot"></i></span><div><p class="text-xs tracking-widest uppercase text-white/50">Address</p><p class="font-medium text-sm">SOWZZUY Beauty Pvt. Ltd., Mumbai, Maharashtra, India</p></div></div>
+        <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4"><span class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold to-rose flex items-center justify-center shrink-0"><i class="fa-solid fa-clock"></i></span><div><p class="text-xs tracking-widest uppercase text-white/50">Hours</p><p class="font-medium text-sm">Mon–Sat, 10:00 AM – 7:00 PM IST</p></div></div>
+      </div>
+    </div>
+    <div class="lg:col-span-3 reveal">
+      <form id="contactForm" onsubmit="submitContact(event)" class="bg-[#FFFCF8] text-ink rounded-[28px] p-6 sm:p-10 shadow-lux">
+        <h3 class="font-serif text-2xl font-bold">Send a Message</h3>
+        <p class="text-sm text-ink/50 mt-1 mb-6">Fill the form below and our care team will reach out shortly.</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div><label class="text-xs font-semibold tracking-wider uppercase text-ink/60">Name *</label><input required id="cName" type="text" placeholder="Your full name" class="mt-2 w-full px-5 py-3.5 rounded-2xl border border-ink/12 bg-white text-sm"></div>
+          <div><label class="text-xs font-semibold tracking-wider uppercase text-ink/60">Email *</label><input required id="cEmail" type="email" placeholder="you@example.com" class="mt-2 w-full px-5 py-3.5 rounded-2xl border border-ink/12 bg-white text-sm"></div>
+          <div><label class="text-xs font-semibold tracking-wider uppercase text-ink/60">Phone *</label><input required id="cPhone" type="tel" pattern="[0-9+ ]{10,15}" placeholder="+91 XXXXX XXXXX" class="mt-2 w-full px-5 py-3.5 rounded-2xl border border-ink/12 bg-white text-sm"></div>
+          <div><label class="text-xs font-semibold tracking-wider uppercase text-ink/60">Subject</label><select id="cSubject" class="mt-2 w-full px-5 py-3.5 rounded-2xl border border-ink/12 bg-white text-sm"><option>Order Support</option><option>Product Query</option><option>Returns & Refunds</option><option>Business / Bulk Order</option><option>Other</option></select></div>
+          <div class="sm:col-span-2"><label class="text-xs font-semibold tracking-wider uppercase text-ink/60">Message *</label><textarea required id="cMsg" rows="4" placeholder="How can we help you?" class="mt-2 w-full px-5 py-3.5 rounded-2xl border border-ink/12 bg-white text-sm resize-none"></textarea></div>
+        </div>
+        <button type="submit" class="mt-6 w-full sm:w-auto px-10 py-4 rounded-full bg-ink text-white font-medium tracking-[0.1em] uppercase text-sm btn-lux">Submit Message <i class="fa-solid fa-paper-plane ml-2 text-xs"></i></button>
+        <p class="mt-3 text-[11px] text-ink/40">By submitting, you agree to be contacted by SOWZZUY regarding your query.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+  <div class="reveal relative overflow-hidden rounded-[30px] bg-gradient-to-br from-ink via-espresso to-[#4A2E2A] text-white p-8 sm:p-14 text-center shadow-lux">
+    <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(#fff 1.5px, transparent 1.5px); background-size:24px 24px;"></div>
+    <div class="relative max-w-2xl mx-auto">
+      <span class="inline-flex w-14 h-14 rounded-full bg-gradient-to-br from-gold to-rose items-center justify-center text-xl shadow-lux mb-4"><i class="fa-solid fa-crown"></i></span>
+      <h3 class="font-serif text-3xl sm:text-4xl font-bold">Join the <span class="italic gold-text">SOWZZUY Glow Club</span></h3>
+      <p class="mt-3 text-white/60 text-sm sm:text-base">Get 10% off your first order + early access to launches, routines & members-only offers.</p>
+      <form onsubmit="subscribeNews(event)" class="mt-6 flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+        <input id="newsEmail" required type="email" placeholder="Enter your email address" class="flex-1 px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-white/40 text-sm">
+        <button class="px-8 py-4 rounded-full bg-gradient-to-r from-gold to-rose font-semibold tracking-wider uppercase text-sm btn-lux whitespace-nowrap">Get 10% Off</button>
+      </form>
+      <p class="mt-3 text-[11px] text-white/40">No spam. Unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[#140E11] text-white pt-16 pb-6 relative overflow-hidden">
+  <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold to-transparent"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <span class="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-rosedeep flex items-center justify-center font-serif text-xl font-bold">S</span>
+          <span><span class="block font-serif font-bold text-xl tracking-[0.18em]">SOWZZUY</span><span class="block text-[9px] tracking-[0.32em] uppercase text-gold">Premium Beauty</span></span>
+        </div>
+        <p class="text-sm text-white/55 leading-relaxed">Premium Beauty & Personal Care — modern everyday skincare & haircare essentials, proudly made for India.</p>
+        <div class="mt-5 flex gap-2.5">
+          <a href="#" onclick="toast('Follow @sowzzuy on Instagram');return false;" class="w-10 h-10 rounded-full bg-white/8 border border-white/12 flex items-center justify-center hover:bg-gradient-to-br hover:from-gold hover:to-rose hover:border-transparent transition" style="background:rgba(255,255,255,.07)"><i class="fa-brands fa-instagram text-sm"></i></a>
+          <a href="#" onclick="toast('Follow SOWZZUY on Facebook');return false;" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-gradient-to-br hover:from-gold hover:to-rose transition" style="background:rgba(255,255,255,.07)"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+          <a href="#" onclick="toast('Subscribe to SOWZZUY on YouTube');return false;" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-gradient-to-br hover:from-gold hover:to-rose transition" style="background:rgba(255,255,255,.07)"><i class="fa-brands fa-youtube text-sm"></i></a>
+          <a href="#" onclick="toast('Follow SOWZZUY on X');return false;" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-gradient-to-br hover:from-gold hover:to-rose transition" style="background:rgba(255,255,255,.07)"><i class="fa-brands fa-x-twitter text-sm"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold tracking-[0.15em] uppercase text-[13px] text-gold mb-5">Quick Links</h4>
+        <ul class="space-y-3 text-sm text-white/60">
+          <li><a href="#shop" class="hover:text-gold transition">Shop</a></li>
+          <li><a href="#about" class="hover:text-gold transition">About Us</a></li>
+          <li><a href="#contact" class="hover:text-gold transition">Contact</a></li>
+          <li><a href="#faq" class="hover:text-gold transition">FAQ</a></li>
+          <li><a href="#reviews" class="hover:text-gold transition">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold tracking-[0.15em] uppercase text-[13px] text-gold mb-5">Shop</h4>
+        <ul class="space-y-3 text-sm text-white/60">
+          <li><a href="#product-1" class="hover:text-gold transition">SOWZZUY Face Serum — ₹499</a></li>
+          <li><a href="#product-2" class="hover:text-gold transition">SOWZZUY Face Wash — ₹399</a></li>
+          <li><a href="#product-3" class="hover:text-gold transition">SOWZZUY Hair Serum — ₹499</a></li>
+          <li><a href="#shop" onclick="setFilter('face');return false;" class="hover:text-gold transition">Face Care</a></li>
+          <li><a href="#shop" onclick="setFilter('hair');return false;" class="hover:text-gold transition">Hair Care</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold tracking-[0.15em] uppercase text-[13px] text-gold mb-5">Policies & Help</h4>
+        <ul class="space-y-3 text-sm text-white/60">
+          <li><button onclick="openPolicy('privacy')" class="hover:text-gold transition">Privacy Policy</button></li>
+          <li><button onclick="openPolicy('terms')" class="hover:text-gold transition">Terms & Conditions</button></li>
+          <li><button onclick="openPolicy('shipping')" class="hover:text-gold transition">Shipping Policy</button></li>
+          <li><button onclick="openPolicy('refund')" class="hover:text-gold transition">Refund Policy</button></li>
+        </ul>
+        <div class="mt-5 flex flex-wrap gap-2 text-[11px]">
+          <span class="px-3 py-1.5 rounded-lg bg-white/10 border border-white/10">UPI</span>
+          <span class="px-3 py-1.5 rounded-lg bg-white/10 border border-white/10">Visa</span>
+          <span class="px-3 py-1.5 rounded-lg bg-white/10 border border-white/10">Mastercard</span>
+          <span class="px-3 py-1.5 rounded-lg bg-white/10 border border-white/10">RuPay</span>
+          <span class="px-3 py-1.5 rounded-lg bg-white/10 border border-white/10">COD</span>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
+      <p>Copyright © 2026 SOWZZUY. All rights reserved.</p>
+      <p class="flex items-center gap-1.5">Crafted with <i class="fa-solid fa-heart text-rose text-[10px]"></i> in India • 100% Secure Shopping</p>
+    </div>
+  </div>
+</footer>
+
+<!-- QUICK VIEW MODAL -->
+<div id="qvOverlay" class="overlay fixed inset-0 bg-ink/70 backdrop-blur-md z-[70] opacity-0 pointer-events-none flex items-center justify-center p-4" onclick="if(event.target===this)closeQV()">
+  <div id="qvBox" class="w-full max-w-4xl bg-[#FFFCF8] rounded-[28px] overflow-hidden shadow-lux max-h-[92vh] overflow-y-auto scale-95 transition-transform duration-300">
+    <div id="qvContent"></div>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div id="coOverlay" class="overlay fixed inset-0 bg-ink/75 backdrop-blur-md z-[80] opacity-0 pointer-events-none flex items-center justify-center p-3 sm:p-6">
+  <div class="w-full max-w-3xl bg-[#FFFCF8] rounded-[28px] shadow-lux max-h-[94vh] overflow-y-auto">
+    <div class="sticky top-0 bg-gradient-to-r from-ink to-espresso text-white px-6 sm:px-8 py-5 flex items-center justify-between z-10">
+      <div><h3 class="font-serif text-xl sm:text-2xl font-bold">Secure Checkout</h3><p class="text-xs text-white/50 tracking-widest uppercase">SOWZZUY • 256-bit Encrypted</p></div>
+      <button onclick="closeCheckout()" class="w-9 h-9 rounded-full bg-white/10 border border-white/15 flex items-center justify-center hover:bg-rose transition"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="coSteps" class="px-6 sm:px-8 pt-6">
+      <div class="flex items-center gap-2 sm:gap-3 mb-6">
+        <div class="flex items-center gap-2 flex-1"><span id="dot1" class="step-dot w-8 h-8 rounded-full bg-ink text-white text-xs font-bold flex items-center justify-center">1</span><span class="text-xs sm:text-sm font-semibold hidden sm:inline">Shipping</span></div>
+        <div class="flex-1 h-[2px] bg-ink/10 rounded"><div id="bar1" class="h-full bg-gold rounded transition-all" style="width:0%"></div></div>
+        <div class="flex items-center gap-2 flex-1"><span id="dot2" class="step-dot w-8 h-8 rounded-full bg-ink/10 text-ink/40 text-xs font-bold flex items-center justify-center">2</span><span class="text-xs sm:text-sm font-semibold hidden sm:inline">Payment</span></div>
+        <div class="flex-1 h-[2px] bg-ink/10 rounded"><div id="bar2" class="h-full bg-gold rounded transition-all" style="width:0%"></div></div>
+        <div class="flex items-center gap-2"><span id="dot3" class="step-dot w-8 h-8 rounded-full bg-ink/10 text-ink/40 text-xs font-bold flex items-center justify-center">3</span><span class="text-xs sm:text-sm font-semibold hidden sm:inline">Confirm</span></div>
+      </div>
+      <!-- Step 1 -->
+      <div id="step1">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div><label class="text-xs font-semibold uppercase tracking-wider text-ink/60">Full Name *</label><input id="oName" class="mt-2 w-full px-5 py-3.5 rounded-2xl border border-ink/12 bg-white text-sm" placeholder="Priya Sharma"></div>
+          <div><label class="text-xs font-semibold uppercase tracking-wider text-ink/60">Phone *</label><input id="oPhone" maxlength="10" class="mt-2 w-full px-5 py-3.5 rounded-2xl border border-ink/12 bg-white text-sm" placeholder="98765 43210"></div>
+          <div class="sm:col-span-2"><label class="text-xs font-semibold uppercase tracking-wider text-ink/60">Email *</label><input id="oEmail" type="email" class="mt-2 w-full px-5 py-3.5 rounded-2xl border border-ink/12 bg-white text-sm" placeholder="you@example.com"></div>
+          <div class="sm:col-span-2"><label class="text-xs font-semibold uppercase tracking-wider text-ink/60">Address *</label><input id="oAddr" class="mt-2 w-full px-5 py-3.5 rounded-2xl border border-ink/12 bg-white text-sm" placeholder="Flat / House no, Street, Landmark"></div>
+          <div><label class="text-xs font-semibold uppercase tracking-wider text-ink/60">City *</label><input id="oCity" class="mt-2 w-full px-5 py-3.5 rounded-2xl border border-ink/12 bg-white text-sm" placeholder="Mumbai"></div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-xs font-semibold uppercase tracking-wider text-ink/60">State *</label><input id="oState" class="mt-2 w-full px-4 py-3.5 rounded-2xl border border-ink/12 bg-white text-sm" placeholder="MH"></div>
+            <div><label class="text-xs font-semibold uppercase tracking-wider text-ink/60">Pincode *</label><input id="oPin" maxlength="6" class="mt-2 w-full px-4 py-3.5 rounded-2xl border border-ink/12 bg-white text-sm" placeholder="400001"></div>
+          </div>
+        </div>
+        <button onclick="toStep(2)" class="mt-6 w-full py-4 rounded-full bg-ink text-white font-semibold tracking-widest uppercase text-sm btn-lux">Continue to Payment <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></button>
+      </div>
+      <!-- Step 2 -->
+      <div id="step2" class="hidden">
+        <div class="grid gap-3">
+          <label class="flex items-center gap-4 p-4 rounded-2xl border-2 border-ink bg-white cursor-pointer pay-card"><input type="radio" name="pay" value="UPI" checked class="accent-black w-4 h-4" onchange="payChange()"><span class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center"><i class="fa-solid fa-mobile-screen"></i></span><span class="flex-1"><span class="block font-semibold text-sm">UPI</span><span class="block text-xs text-ink/50">GPay / PhonePe / Paytm</span></span><span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700">RECOMMENDED</span></label>
+          <label class="flex items-center gap-4 p-4 rounded-2xl border border-ink/12 bg-white cursor-pointer pay-card"><input type="radio" name="pay" value="Card" class="accent-black w-4 h-4" onchange="payChange()"><span class="w-11 h-11 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center"><i class="fa-solid fa-credit-card"></i></span><span class="flex-1"><span class="block font-semibold text-sm">Credit / Debit Card</span><span class="block text-xs text-ink/50">Visa, Mastercard, RuPay</span></span></label>
+          <label class="flex items-center gap-4 p-4 rounded-2xl border border-ink/12 bg-white cursor-pointer pay-card"><input type="radio" name="pay" value="COD" class="accent-black w-4 h-4" onchange="payChange()"><span class="w-11 h-11 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center"><i class="fa-solid fa-money-bill-wave"></i></span><span class="flex-1"><span class="block font-semibold text-sm">Cash on Delivery</span><span class="block text-xs text-ink/50">Pay in cash/UPI at doorstep</span></span></label>
+        </div>
+        <div id="payExtra" class="mt-4"></div>
+        <div class="mt-6 flex gap-3">
+          <button onclick="toStep(1)" class="px-6 py-4 rounded-full border border-ink/15 text-sm font-semibold hover:bg-cream transition">Back</button>
+          <button onclick="toStep(3)" class="flex-1 py-4 rounded-full bg-ink text-white font-semibold tracking-widest uppercase text-sm btn-lux">Review Order <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></button>
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div id="step3" class="hidden">
+        <div id="reviewBox" class="bg-white border border-gold/20 rounded-2xl p-5"></div>
+        <div class="mt-6 flex gap-3 pb-8">
+          <button onclick="toStep(2)" class="px-6 py-4 rounded-full border border-ink/15 text-sm font-semibold hover:bg-cream transition">Back</button>
+          <button id="placeBtn" onclick="placeOrder()" class="flex-1 py-4 rounded-full bg-gradient-to-r from-gold to-rosedeep text-white font-semibold tracking-widest uppercase text-sm btn-lux"><i class="fa-solid fa-lock mr-2 text-xs"></i>Place Order</button>
+        </div>
+      </div>
+      <!-- Success -->
+      <div id="stepSuccess" class="hidden text-center pb-10">
+        <svg class="w-24 h-24 mx-auto" viewBox="0 0 64 64" fill="none"><circle class="success-circle" cx="32" cy="32" r="29" stroke="#C9A15A" stroke-width="3"/><path class="success-check" d="M20 33l8 8 16-17" stroke="#1C1316" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="font-serif text-3xl font-bold mt-4">Order Placed!</h3>
+        <p class="text-sm text-ink/55 mt-2">Thank you for shopping with <strong>SOWZZUY</strong>.<br>A confirmation has been sent to <span id="sEmail" class="font-semibold text-ink"></span></p>
+        <div class="mt-5 inline-flex flex-col sm:flex-row gap-3">
+          <span class="px-6 py-3 rounded-full bg-ink text-white text-sm font-semibold">Order ID: <span id="orderId" class="text-gold"></span></span>
+          <span class="px-6 py-3 rounded-full bg-cream border border-gold/30 text-sm font-semibold">Delivery by: <span id="deliveryDate"></span></span>
+        </div>
+        <div id="successItems" class="mt-6 text-left bg-white border border-gold/20 rounded-2xl p-5 max-w-md mx-auto"></div>
+        <button onclick="closeCheckout()" class="mt-6 px-10 py-4 rounded-full bg-ink text-white text-sm font-semibold tracking-widest uppercase btn-lux">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- POLICY MODAL -->
+<div id="polOverlay" class="overlay fixed inset-0 bg-ink/70 backdrop-blur-md z-[75] opacity-0 pointer-events-none flex items-center justify-center p-4" onclick="if(event.target===this)closePolicy()">
+  <div class="w-full max-w-2xl bg-[#FFFCF8] rounded-[26px] shadow-lux max-h-[85vh] overflow-y-auto p-7 sm:p-9">
+    <div class="flex items-start justify-between mb-4"><h3 id="polTitle" class="font-serif text-2xl font-bold"></h3><button onclick="closePolicy()" class="w-9 h-9 rounded-full bg-ink text-white flex items-center justify-center shrink-0"><i class="fa-solid fa-xmark"></i></button></div>
+    <div id="polBody" class="text-sm text-ink/65 leading-relaxed space-y-3"></div>
+  </div>
+</div>
+
+<!-- TOASTS -->
+<div id="toasts" class="fixed bottom-5 right-4 sm:right-6 z-[90] flex flex-col gap-3 items-end"></div>
+
+<!-- BACK TO TOP -->
+<button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bottom-5 left-4 sm:left-6 z-[55] w-12 h-12 rounded-full bg-ink text-gold shadow-lux items-center justify-center hover:bg-golddark hover:text-white transition hidden"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+/* ============ DATA ============ */
+const PRODUCTS = [
+  { id:1, name:"SOWZZUY Face Serum", cat:"face", catLabel:"Face Care", price:499, mrp:799, rating:4.8, reviews:1247, badge:"Bestseller",
+    img:"https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop",
+    desc:"Lightweight daily serum that leaves skin feeling hydrated, smooth & refreshed.",
+    long:"A silky, fast-absorbing everyday face serum designed to layer beautifully under moisturiser and makeup." },
+  { id:2, name:"SOWZZUY Face Wash", cat:"face", catLabel:"Face Care", price:399, mrp:599, rating:4.7, reviews:986, badge:"Everyday Essential",
+    img:"https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=800&auto=format&fit=crop",
+    desc:"Gentle daily cleanser that removes dirt, oil & impurities for a fresh feel.",
+    long:"A soft-lather gentle face wash that rinses clean — the perfect step one of your SOWZZUY ritual." },
+  { id:3, name:"SOWZZUY Hair Serum", cat:"hair", catLabel:"Hair Care", price:499, mrp:799, rating:4.9, reviews:1532, badge:"Salon Shine",
+    img:"https://images.unsplash.com/photo-1526947425960-945c6e72858f?q=80&w=800&auto=format&fit=crop",
+    desc:"Silky serum for smoother-looking, shinier, more manageable hair.",
+    long:"A non-greasy finishing serum that tames the look of frizz & adds luminous shine." }
+];
+const REVIEWS = [
+  { name:"Ananya Deshpande", city:"Mumbai", img:"https://randomuser.me/api/portraits/women/65.jpg", rating:5, product:"Face Serum", text:"The texture is so lightweight! It absorbs quickly and my skin feels soft and hydrated. Love the premium packaging." },
+  { name:"Priya Nair", city:"Bengaluru", img:"https://randomuser.me/api/portraits/women/44.jpg", rating:5, product:"Hair Serum", text:"My hair looks so much smoother and shinier. Just 2 drops after wash — no greasy feeling at all. Highly recommended!" },
+  { name:"Kavya Reddy", city:"Hyderabad", img:"https://randomuser.me/api/portraits/women/68.jpg", rating:4, product:"Face Wash", text:"Gentle foaming cleanser, perfect for my morning routine. Skin feels fresh and clean without dryness." },
+  { name:"Ritu Malhotra", city:"Delhi", img:"https://randomuser.me/api/portraits/women/26.jpg", rating:5, product:"Full Routine", text:"Ordered all three — delivery was fast and COD made it easy. The complete routine feels truly luxurious." },
+  { name:"Sneha Kulkarni", city:"Pune", img:"https://randomuser.me/api/portraits/women/33.jpg", rating:5, product:"Face Serum", text:"Beautiful bottle, lovely feel on skin. It layers well under my moisturiser and sunscreen every morning." },
+  { name:"Ishita Bose", city:"Kolkata", img:"https://randomuser.me/api/portraits/women/17.jpg", rating:4, product:"Hair Serum", text:"Great for frizz-prone hair in humid weather. My ends look healthier and more polished. Will repurchase!" }
+];
+
+let cart = JSON.parse(localStorage.getItem('sow_cart')||'{}'); // {id:qty}
+let wishlist = new Set();
+let currentFilter = 'all';
+let dQty = {1:1,2:1,3:1};
+const fmt = n => '₹' + n.toLocaleString('en-IN');
+const byId = id => PRODUCTS.find(p=>p.id===id);
+
+function stars(r, size='text-[13px]'){
+  let h = `<span class="flex gap-[2px] ${size} star">`;
+  for(let i=1;i<=5;i++){
+    if(r>=i) h+=`<i class="fa-solid fa-star"></i>`;
+    else if(r>=i-0.5) h+=`<i class="fa-solid fa-star-half-stroke"></i>`;
+    else h+=`<i class="fa-regular fa-star"></i>`;
+  }
+  return h+`</span>`;
+}
+
+/* ============ PRODUCT CARDS ============ */
+function productCard(p, featured=false){
+  const off = Math.round((1-p.price/p.mrp)*100);
+  return `
+  <article class="reveal bg-white rounded-[26px] overflow-hidden border border-gold/20 shadow-card card-hover flex flex-col group">
+    <div class="img-zoom relative">
+      <img src="${p.img}" alt="${p.name}" loading="lazy" class="w-full h-[280px] object-cover">
+      <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-ink/90 backdrop-blur text-white text-[10px] font-bold tracking-[0.15em] uppercase">${p.badge}</span>
+      <span class="absolute top-4 right-4 w-11 h-11 rounded-full bg-gradient-to-br from-gold to-rose text-white flex flex-col items-center justify-center text-[10px] font-bold leading-none shadow">${off}%<span class="text-[7px] font-medium">OFF</span></span>
+      <button onclick="toggleWish(${p.id},this)" class="wish-btn absolute bottom-4 right-4 w-10 h-10 rounded-full glass border border-white/50 flex items-center justify-center hover:scale-110 transition shadow" aria-label="wishlist"><i class="fa-regular fa-heart text-sm"></i></button>
+      <button onclick="openQV(${p.id})" class="absolute bottom-4 left-4 px-4 py-2 rounded-full glass border border-white/50 text-xs font-semibold hover:bg-ink hover:text-white transition">Quick View</button>
+      <span class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-14 opacity-0">${p.catLabel}</span>
+    </div>
+    <div class="p-6 flex flex-col flex-1">
+      <p class="text-[10px] tracking-[0.28em] uppercase text-golddark font-semibold">${p.catLabel} • SOWZZUY</p>
+      <h3 class="font-serif text-xl font-bold mt-1.5 leading-snug">${p.name}</h3>
+      <p class="text-[13px] text-ink/55 mt-1.5 leading-relaxed flex-1">${p.desc}</p>
+      <div class="mt-3 flex items-center gap-2">${stars(p.rating)}<span class="text-xs text-ink/50 font-medium">${p.rating} (${p.reviews.toLocaleString('en-IN')})</span></div>
+      <div class="mt-3 flex items-center gap-2.5">
+        <span class="font-serif text-2xl font-bold">${fmt(p.price)}</span>
+        <span class="text-sm text-ink/35 line-through">${fmt(p.mrp)}</span>
+        <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">Save ${fmt(p.mrp-p.price)}</span>
+      </div>
+      <div class="mt-4 grid grid-cols-2 gap-2.5">
+        <button onclick="addToCart(${p.id},1)" class="py-3 rounded-full border-[1.5px] border-ink text-[13px] font-semibold tracking-wide hover:bg-ink hover:text-white transition btn-lux"><i class="fa-solid fa-bag-shopping mr-1.5 text-xs"></i>Add to Cart</button>
+        <button onclick="buyNow(${p.id},1)" class="py-3 rounded-full bg-ink text-white text-[13px] font-semibold tracking-wide hover:bg-golddark transition btn-lux">Buy Now</button>
+      </div>
+      <a href="#product-${p.id}" class="mt-3 text-center text-xs font-semibold tracking-[0.15em] uppercase text-golddark hover:text-ink transition">View Full Details <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
+    </div>
+  </article>`;
+}
+
+function renderFeatured(){
+  document.getElementById('featuredGrid').innerHTML = PRODUCTS.map(p=>productCard(p,true)).join('');
+  observeReveals();
+}
+function setFilter(f){
+  currentFilter = f;
+  document.querySelectorAll('.filter-pill').forEach(b=>b.classList.toggle('active', b.dataset.filter===f));
+  renderShop();
+  document.getElementById('shop').scrollIntoView({behavior:'smooth'});
+}
+function renderShop(){
+  const q = (document.getElementById('shopSearch').value||'').toLowerCase();
+  const sort = document.getElementById('sortSelect').value;
+  let list = PRODUCTS.filter(p => (currentFilter==='all'||p.cat===currentFilter) && p.name.toLowerCase().includes(q));
+  if(sort==='low') list=[...list].sort((a,b)=>a.price-b.price);
+  if(sort==='high') list=[...list].sort((a,b)=>b.price-a.price);
+  if(sort==='rating') list=[...list].sort((a,b)=>b.rating-a.rating);
+  document.getElementById('shopCount').textContent = `Showing ${list.length} product${list.length!==1?'s':''}`;
+  document.getElementById('shopGrid').innerHTML = list.length ? list.map(p=>productCard(p)).join('') :
+    `<div class="col-span-full text-center py-16 bg-white rounded-[26px] border border-dashed border-gold/40"><i class="fa-solid fa-magnifying-glass text-3xl text-gold/50"></i><p class="font-serif text-xl font-bold mt-3">No products found</p><p class="text-sm text-ink/50 mt-1">Try a different search or filter.</p><button onclick="document.getElementById('shopSearch').value='';setFilter('all')" class="mt-4 px-6 py-2.5 rounded-full bg-ink text-white text-sm">Reset Filters</button></div>`;
+  observeReveals();
+}
+
+/* ============ REVIEWS ============ */
+function renderReviews(){
+  document.getElementById('reviewTrack').innerHTML = REVIEWS.map(r=>`
+    <div class="review-card shrink-0 w-[85%] sm:w-[380px] bg-white rounded-[24px] border border-gold/20 shadow-card p-6 flex flex-col">
+      <div class="flex items-center justify-between mb-3">
+        ${stars(r.rating)}
+        <span class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 border border-amber-200 uppercase tracking-wider">Placeholder</span>
+      </div>
+      <p class="text-[14px] text-ink/70 leading-relaxed flex-1">"${r.text}"</p>
+      <div class="mt-5 pt-4 border-t border-dashed border-ink/10 flex items-center gap-3">
+        <img src="${r.img}" class="w-11 h-11 rounded-full object-cover border-2 border-gold/30" alt="${r.name}">
+        <div class="flex-1"><p class="font-semibold text-sm">${r.name}</p><p class="text-xs text-ink/45">${r.city} • Bought: ${r.product}</p></div>
+        <span class="text-emerald-600 text-xs font-semibold"><i class="fa-solid fa-circle-check mr-1"></i>Verified</span>
+      </div>
+    </div>`).join('');
+}
+function scrollReviews(dir){
+  document.getElementById('reviewTrack').scrollBy({left: dir*400, behavior:'smooth'});
+}
+
+/* ============ CART ============ */
+function saveCart(){ localStorage.setItem('sow_cart', JSON.stringify(cart)); renderCart(); }
+function cartQty(){ return Object.values(cart).reduce((a,b)=>a+b,0); }
+function cartSubtotal(){ return Object.entries(cart).reduce((a,[id,q])=>a+byId(+id).price*q,0); }
+function cartMRP(){ return Object.entries(cart).reduce((a,[id,q])=>a+byId(+id).mrp*q,0); }
+
+function addToCart(id, qty=1){
+  cart[id]=(cart[id]||0)+qty; saveCart();
+  toast(`${byId(id).name} added to bag`);
+  openCart();
+}
+function buyNow(id, qty=1){
+  cart[id]=(cart[id]||0)+qty; saveCart(); openCheckout();
+}
+function addBundle(){
+  cart[1]=(cart[1]||0)+1; cart[2]=(cart[2]||0)+1; cart[3]=(cart[3]||0)+1;
+  saveCart(); toast('Full SOWZZUY Routine added — ₹1,397'); openCart();
+}
+function changeQty(id,d){
+  cart[id]=(cart[id]||0)+d;
+  if(cart[id]<=0) delete cart[id];
+  saveCart();
+}
+function removeItem(id){ delete cart[id]; saveCart(); toast('Item removed from bag'); }
+
+function renderCart(){
+  const box = document.getElementById('cartItems');
+  const count = cartQty(), sub = cartSubtotal(), save = cartMRP()-sub;
+  const ship = sub===0?0:(sub>=499?0:49);
+  document.getElementById('cartCount').textContent = count;
+  document.getElementById('cartCountMobile').textContent = count;
+  document.getElementById('cartHeadCount').textContent = `(${count})`;
+  document.getElementById('cartSubtotal').textContent = fmt(sub);
+  document.getElementById('cartSave').textContent = fmt(save);
+  document.getElementById('cartShipping').innerHTML = sub===0?'—':(ship===0?'<span class="text-emerald-600 font-bold">FREE</span>':fmt(ship));
+  document.getElementById('cartShipping').className = 'font-semibold '+(ship===0&&sub>0?'text-emerald-600':'');
+  document.getElementById('cartTotal').textContent = fmt(sub+ship);
+  const pct = Math.min(100, (sub/499)*100);
+  document.getElementById('shipBar').style.width = pct+'%';
+  document.getElementById('shipMsg').textContent = sub>=499 ? 'You unlocked FREE shipping!' : (sub===0?'Add items worth ₹499 for FREE shipping':`Add ${fmt(499-sub)} more for FREE shipping`);
+
+  if(count===0){
+    box.innerHTML = `<div class="h-full flex flex-col items-center justify-center text-center py-16">
+      <span class="w-20 h-20 rounded-full bg-cream border border-gold/25 flex items-center justify-center text-2xl text-gold mb-4"><i class="fa-solid fa-bag-shopping"></i></span>
+      <p class="font-serif text-xl font-bold">Your bag is empty</p>
+      <p class="text-sm text-ink/50 mt-1 mb-5">Discover premium SOWZZUY essentials.</p>
+      <button onclick="closeCart();document.getElementById('shop').scrollIntoView({behavior:'smooth'})" class="px-8 py-3 rounded-full bg-ink text-white text-sm font-semibold btn-lux">Shop Now</button></div>`;
+    return;
+  }
+  box.innerHTML = Object.entries(cart).map(([id,q])=>{
+    const p = byId(+id);
+    return `<div class="flex gap-3.5 bg-white border border-gold/20 rounded-2xl p-3.5 shadow-sm">
+      <img src="${p.img}" class="w-[74px] h-[84px] rounded-xl object-cover shrink-0" alt="${p.name}">
+      <div class="flex-1 min-w-0">
+        <div class="flex items-start justify-between gap-2">
+          <div><p class="font-semibold text-[14px] leading-tight">${p.name}</p><p class="text-[11px] text-ink/45 mt-0.5">${p.catLabel}</p></div>
+          <button onclick="removeItem(${p.id})" class="text-ink/30 hover:text-red-500 transition text-sm"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+        <div class="mt-2.5 flex items-center justify-between">
+          <div class="flex items-center rounded-full border border-ink/12 overflow-hidden">
+            <button onclick="changeQty(${p.id},-1)" class="qty-btn w-8 h-8 text-sm">−</button>
+            <span class="w-8 text-center text-sm font-bold">${q}</span>
+            <button onclick="changeQty(${p.id},1)" class="qty-btn w-8 h-8 text-sm">+</button>
+          </div>
+          <div class="text-right"><p class="font-bold text-[15px]">${fmt(p.price*q)}</p><p class="text-[11px] text-ink/35 line-through">${fmt(p.mrp*q)}</p></div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openCart(){ renderCart(); document.getElementById('cartDrawer').style.transform='translateX(0)'; const o=document.getElementById('cartOverlay'); o.style.opacity='1'; o.style.pointerEvents='auto'; document.body.style.overflow='hidden'; }
+function closeCart(){ document.getElementById('cartDrawer').style.transform=''; const o=document.getElementById('cartOverlay'); o.style.opacity='0'; o.style.pointerEvents='none'; document.body.style.overflow=''; }
+
+/* ============ DETAIL QTY ============ */
+function detailQty(id,d){ dQty[id]=Math.min(10,Math.max(1,(dQty[id]||1)+d)); document.getElementById('dqty-'+id).textContent=dQty[id]; }
+function getDQty(id){ return dQty[id]||1; }
+
+/* ============ WISHLIST ============ */
+function toggleWish(id, btn){
+  if(wishlist.has(id)){ wishlist.delete(id); btn.innerHTML='<i class="fa-regular fa-heart text-sm"></i>'; btn.classList.remove('!bg-rose','!text-white'); }
+  else{ wishlist.add(id); btn.innerHTML='<i class="fa-solid fa-heart text-sm"></i>'; btn.style.background='#C97A5E'; btn.style.color='#fff'; toast(`${byId(id).name} saved to wishlist`); }
+  document.getElementById('wishCount').textContent = wishlist.size;
+}
+function toggleWishlistInfo(){ toast(wishlist.size? `You have ${wishlist.size} item(s) in wishlist` : 'Your wishlist is empty — tap the heart on any product'); }
+
+/* ============ QUICK VIEW ============ */
+function openQV(id){
+  const p = byId(id); const off=Math.round((1-p.price/p.mrp)*100);
+  document.getElementById('qvContent').innerHTML = `
+    <div class="grid md:grid-cols-2">
+      <div class="relative"><img src="${p.img}" class="w-full h-[300px] md:h-full md:min-h-[480px] object-cover" alt="${p.name}">
+        <span class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-ink text-white text-[10px] font-bold tracking-widest uppercase">${p.badge} • ${off}% OFF</span></div>
+      <div class="p-6 sm:p-8">
+        <div class="flex items-start justify-between gap-3">
+          <p class="text-[10px] tracking-[0.28em] uppercase text-golddark font-semibold">${p.catLabel}</p>
+          <button onclick="closeQV()" class="w-9 h-9 -mt-1 rounded-full bg-ink text-white flex items-center justify-center shrink-0"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <h3 class="font-serif text-2xl sm:text-3xl font-bold mt-1">${p.name}</h3>
+        <div class="mt-2 flex items-center gap-2">${stars(p.rating)}<span class="text-xs text-ink/50">${p.rating} • ${p.reviews.toLocaleString('en-IN')} reviews</span></div>
+        <div class="mt-3 flex items-center gap-2.5"><span class="font-serif text-3xl font-bold">${fmt(p.price)}</span><span class="text-ink/35 line-through">${fmt(p.mrp)}</span></div>
+        <p class="text-sm text-ink/55 mt-3 leading-relaxed">${p.long} ${p.desc}</p>
+        <div class="mt-4 flex flex-wrap gap-2 text-[11px]"><span class="px-3 py-1.5 rounded-full bg-cream border border-gold/25"><i class="fa-solid fa-truck-fast mr-1 text-golddark"></i>Free ship ₹499+</span><span class="px-3 py-1.5 rounded-full bg-cream border border-gold/25"><i class="fa-solid fa-rotate-left mr-1 text-golddark"></i>7-day returns</span><span class="px-3 py-1.5 rounded-full bg-cream border border-gold/25"><i class="fa-solid fa-money-bill-wave mr-1 text-golddark"></i>COD</span></div>
+        <div class="mt-5 flex gap-3">
+          <div class="flex items-center rounded-full border border-ink/15 overflow-hidden"><button onclick="qvQty(-1)" class="qty-btn w-11 h-[50px]">−</button><span id="qvN" class="w-8 text-center font-bold">1</span><button onclick="qvQty(1)" class="qty-btn w-11 h-[50px]">+</button></div>
+          <button onclick="addToCart(${p.id}, qvCount);closeQV()" class="flex-1 py-3 rounded-full border-[1.5px] border-ink text-sm font-semibold hover:bg-ink hover:text-white transition">Add to Cart</button>
+        </div>
+        <button onclick="buyNow(${p.id}, qvCount)" class="mt-2.5 w-full py-4 rounded-full bg-ink text-white text-sm font-semibold tracking-widest uppercase btn-lux">Buy Now • ${fmt(p.price)}</button>
+        <a href="#product-${p.id}" onclick="closeQV()" class="mt-3 block text-center text-xs font-semibold tracking-widest uppercase text-golddark">View Complete Details →</a>
+      </div>
+    </div>`;
+  qvCount=1;
+  const o=document.getElementById('qvOverlay'); o.style.opacity='1'; o.style.pointerEvents='auto';
+  document.getElementById('qvBox').style.transform='scale(1)'; document.body.style.overflow='hidden';
+}
+let qvCount=1;
+function qvQty(d){ qvCount=Math.min(10,Math.max(1,qvCount+d)); document.getElementById('qvN').textContent=qvCount; }
+function closeQV(){ const o=document.getElementById('qvOverlay'); o.style.opacity='0'; o.style.pointerEvents='none'; document.getElementById('qvBox').style.transform=''; document.body.style.overflow=''; }
+
+/* ============ CHECKOUT ============ */
+let coStep=1;
+function openCheckout(){
+  if(cartQty()===0){ toast('Your bag is empty — add a product first'); return; }
+  closeCart(); toStep(1);
+  document.getElementById('stepSuccess').classList.add('hidden');
+  const o=document.getElementById('coOverlay'); o.style.opacity='1'; o.style.pointerEvents='auto'; document.body.style.overflow='hidden';
+  payChange();
+}
+function closeCheckout(){ const o=document.getElementById('coOverlay'); o.style.opacity='0'; o.style.pointerEvents='none'; document.body.style.overflow=''; }
+function toStep(n){
+  if(n===2){
+    const req=['oName','oPhone','oEmail','oAddr','oCity','oState','oPin'];
+    for(const id of req){ const el=document.getElementById(id); if(!el.value.trim()){ el.focus(); el.style.borderColor='#e11d48'; toast('Please fill all shipping details'); setTimeout(()=>el.style.borderColor='',1500); return; } }
+    const ph=document.getElementById('oPhone').value.replace(/\D/g,'');
+    if(ph.length<10){ toast('Please enter a valid 10-digit phone number'); return; }
+    if(document.getElementById('oPin').value.replace(/\D/g,'').length!==6){ toast('Please enter a valid 6-digit pincode'); return; }
+  }
+  coStep=n;
+  ['step1','step2','step3'].forEach((s,i)=>document.getElementById(s).classList.toggle('hidden', i!==(n-1)));
+  document.getElementById('stepSuccess').classList.add('hidden');
+  const dots=[document.getElementById('dot1'),document.getElementById('dot2'),document.getElementById('dot3')];
+  dots.forEach((d,i)=>{
+    if(i<n){ d.className='step-dot w-8 h-8 rounded-full bg-ink text-white text-xs font-bold flex items-center justify-center'; d.innerHTML = i<n-1?'<i class="fa-solid fa-check text-[11px]"></i>':(i+1); }
+    else{ d.className='step-dot w-8 h-8 rounded-full bg-ink/10 text-ink/40 text-xs font-bold flex items-center justify-center'; d.textContent=i+1; }
+  });
+  document.getElementById('bar1').style.width = n>=2?'100%':'0%';
+  document.getElementById('bar2').style.width = n>=3?'100%':'0%';
+  if(n===3) renderReview();
+}
+function payMethod(){ return document.querySelector('input[name="pay"]:checked').value; }
+function payChange(){
+  document.querySelectorAll('.pay-card').forEach(l=>{
+    const on = l.querySelector('input').checked;
+    l.style.borderColor = on ? '#1C1316' : ''; l.style.borderWidth = on ? '2px' : '';
+  });
+  const m = payMethod();
+  document.getElementById('payExtra').innerHTML =
+    m==='UPI' ? `<div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4"><label class="text-xs font-semibold uppercase tracking-wider text-emerald-800">Your UPI ID</label><input id="upiId" placeholder="yourname@okhdfc / @okaxis" class="mt-2 w-full px-5 py-3 rounded-xl border border-emerald-200 bg-white text-sm"><p class="text-[11px] text-emerald-700 mt-2"><i class="fa-solid fa-shield-halved mr-1"></i>You will receive a collect request after placing the order.</p></div>`
+    : m==='Card' ? `<div class="bg-blue-50 border border-blue-200 rounded-2xl p-4 grid sm:grid-cols-2 gap-3"><div class="sm:col-span-2"><label class="text-xs font-semibold uppercase tracking-wider text-blue-900">Card Number</label><input maxlength="19" placeholder="1234 5678 9012 3456" class="mt-2 w-full px-5 py-3 rounded-xl border border-blue-200 bg-white text-sm"></div><div><label class="text-xs font-semibold uppercase tracking-wider text-blue-900">Expiry</label><input placeholder="MM/YY" class="mt-2 w-full px-4 py-3 rounded-xl border border-blue-200 bg-white text-sm"></div><div><label class="text-xs font-semibold uppercase tracking-wider text-blue-900">CVV</label><input type="password" maxlength="4" placeholder="•••" class="mt-2 w-full px-4 py-3 rounded-xl border border-blue-200 bg-white text-sm"></div></div>`
+    : `<div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-sm text-amber-900"><i class="fa-solid fa-circle-info mr-2"></i>Pay <strong id="codAmt"></strong> in cash or UPI when your SOWZZUY order arrives. Please keep exact change ready.</div>`;
+  if(m==='COD'){ const sub=cartSubtotal(); const ship=sub>=499?0:49; const el=document.getElementById('codAmt'); if(el) el.textContent=fmt(sub+ship); }
+}
+function renderReview(){
+  const sub=cartSubtotal(), ship=sub>=499?0:49, total=sub+ship;
+  const items = Object.entries(cart).map(([id,q])=>{ const p=byId(+id); return `<div class="flex items-center gap-3 py-2.5 border-b border-dashed border-ink/10 last:border-0"><img src="${p.img}" class="w-12 h-12 rounded-xl object-cover"><div class="flex-1"><p class="text-sm font-semibold">${p.name} <span class="text-ink/40 font-normal">× ${q}</span></p></div><p class="text-sm font-bold">${fmt(p.price*q)}</p></div>`; }).join('');
+  document.getElementById('reviewBox').innerHTML = `
+    <div class="flex items-center gap-3 mb-3"><span class="w-9 h-9 rounded-full bg-cream border border-gold/30 flex items-center justify-center text-golddark text-sm"><i class="fa-solid fa-location-dot"></i></span>
+    <div class="text-sm"><p class="font-semibold">${document.getElementById('oName').value} • ${document.getElementById('oPhone').value}</p><p class="text-ink/55 text-xs">${document.getElementById('oAddr').value}, ${document.getElementById('oCity').value}, ${document.getElementById('oState').value} — ${document.getElementById('oPin').value}</p></div></div>
+    <div class="bg-cream/60 rounded-xl p-3 mb-3">${items}</div>
+    <div class="text-sm space-y-1.5">
+      <div class="flex justify-between"><span class="text-ink/55">Subtotal</span><span class="font-semibold">${fmt(sub)}</span></div>
+      <div class="flex justify-between"><span class="text-ink/55">Shipping</span><span class="font-semibold ${ship===0?'text-emerald-600':''}">${ship===0?'FREE':fmt(ship)}</span></div>
+      <div class="flex justify-between"><span class="text-ink/55">Payment</span><span class="font-semibold">${payMethod()}</span></div>
+      <div class="flex justify-between pt-2 border-t border-ink/10"><span class="font-serif font-bold text-lg">Total Payable</span><span class="font-serif font-bold text-2xl">${fmt(total)}</span></div>
+    </div>`;
+}
+function placeOrder(){
+  const btn=document.getElementById('placeBtn');
+  btn.innerHTML='<i class="fa-solid fa-circle-notch fa-spin mr-2"></i>Processing...'; btn.disabled=true;
+  setTimeout(()=>{
+    btn.innerHTML='<i class="fa-solid fa-lock mr-2 text-xs"></i>Place Order'; btn.disabled=false;
+    const sub=cartSubtotal(), ship=sub>=499?0:49;
+    const oid='SOW'+Date.now().toString().slice(-7);
+    const d=new Date(Date.now()+5*864e5);
+    document.getElementById('orderId').textContent='#'+oid;
+    document.getElementById('sEmail').textContent=document.getElementById('oEmail').value||'your email';
+    document.getElementById('deliveryDate').textContent=d.toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+    document.getElementById('successItems').innerHTML = Object.entries(cart).map(([id,q])=>{const p=byId(+id);return `<div class="flex justify-between text-sm py-1.5 border-b border-dashed border-ink/10 last:border-0"><span>${p.name} × ${q}</span><span class="font-bold">${fmt(p.price*q)}</span></div>`;}).join('')+`<div class="flex justify-between pt-3 font-serif font-bold text-lg"><span>Total Paid${payMethod()==='COD'?' (on delivery)':''}</span><span>${fmt(sub+ship)}</span></div>`;
+    ['step1','step2','step3'].forEach(s=>document.getElementById(s).classList.add('hidden'));
+    document.getElementById('stepSuccess').classList.remove('hidden');
+    document.getElementById('bar1').style.width='100%'; document.getElementById('bar2').style.width='100%';
+    cart={}; saveCart();
+    toast('Order placed successfully!');
+  },1600);
+}
+
+/* ============ SEARCH ============ */
+function openSearch(){ const o=document.getElementById('searchOverlay'); o.style.opacity='1'; o.style.pointerEvents='auto'; setTimeout(()=>document.getElementById('searchInput').focus(),100); liveSearch(''); }
+function closeSearch(){ const o=document.getElementById('searchOverlay'); o.style.opacity='0'; o.style.pointerEvents='none'; }
+function quickSearch(t){ document.getElementById('searchInput').value=t; liveSearch(t); }
+function liveSearch(q){
+  q=(q||'').toLowerCase();
+  const list = PRODUCTS.filter(p=>p.name.toLowerCase().includes(q)||p.catLabel.toLowerCase().includes(q)||'sowzzuy'.includes(q));
+  document.getElementById('searchResults').innerHTML = list.length? list.map(p=>`
+    <div class="flex items-center gap-4 p-3 rounded-2xl border border-gold/20 bg-white hover:shadow-card transition cursor-pointer" onclick="closeSearch();document.getElementById('product-${p.id}').scrollIntoView({behavior:'smooth'})">
+      <img src="${p.img}" class="w-14 h-14 rounded-xl object-cover" alt="${p.name}">
+      <div class="flex-1"><p class="font-semibold text-sm">${p.name}</p><p class="text-xs text-ink/50">${p.catLabel} • ${stars(p.rating,'text-[10px]')}</p></div>
+      <span class="font-serif font-bold">${fmt(p.price)}</span>
+      <button onclick="event.stopPropagation();addToCart(${p.id},1);closeSearch()" class="w-10 h-10 rounded-full bg-ink text-white flex items-center justify-center hover:bg-golddark"><i class="fa-solid fa-plus text-xs"></i></button>
+    </div>`).join('')
+  : `<p class="text-center text-sm text-ink/50 py-6">No matches for "${q}". Try Face Serum, Face Wash or Hair Serum.</p>`;
+}
+
+/* ============ MOBILE / HEADER ============ */
+document.getElementById('mobileMenuBtn').addEventListener('click',()=>{ document.getElementById('mobileMenu').style.transform='translateX(0)'; const o=document.getElementById('mobileOverlay'); o.style.opacity='1'; o.style.pointerEvents='auto'; });
+function closeMobile(){ document.getElementById('mobileMenu').style.transform=''; const o=document.getElementById('mobileOverlay'); o.style.opacity='0'; o.style.pointerEvents='none'; }
+window.addEventListener('scroll',()=>{
+  document.getElementById('header').classList.toggle('scrolled', window.scrollY>20);
+  const t=document.getElementById('toTop');
+  if(window.scrollY>600){ t.classList.remove('hidden'); t.classList.add('flex'); } else { t.classList.add('hidden'); t.classList.remove('flex'); }
+});
+
+/* ============ FAQ / FORMS / MISC ============ */
+function toggleFaq(btn){
+  const item=btn.parentElement; const was=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(f=>f.classList.remove('open'));
+  if(!was) item.classList.add('open');
+}
+function submitContact(e){
+  e.preventDefault();
+  const btn=e.target.querySelector('button[type="submit"]');
+  btn.innerHTML='<i class="fa-solid fa-circle-notch fa-spin mr-2"></i>Sending...';
+  setTimeout(()=>{ btn.innerHTML='Submit Message <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>'; e.target.reset(); toast('Message sent! Our team will reply within 24 hours.'); },1200);
+}
+function subscribeNews(e){ e.preventDefault(); const em=document.getElementById('newsEmail').value; document.getElementById('newsEmail').value=''; toast(`Welcome to Glow Club! Code SOWZZUY10 sent to ${em}`); }
+
+const POLICIES = {
+  privacy:{t:'Privacy Policy', b:`<p><strong>Effective:</strong> January 2026. SOWZZUY respects your privacy. We collect only essential details (name, contact, address, order history) to process orders and improve service.</p><p>Your data is never sold. Payments are processed via PCI-DSS compliant gateways; we do not store card/UPI credentials. You may request data access or deletion anytime at <strong>care@sowzzuy.in</strong>.</p><p>We use cookies to enhance shopping experience and analyse traffic. By using this website, you consent to this policy.</p>`},
+  terms:{t:'Terms & Conditions', b:`<p>By purchasing from SOWZZUY, you agree that products are for personal, external use only. Prices are in INR inclusive of taxes. We reserve the right to cancel suspected fraudulent orders with full refund.</p><p>Product images are representative; minor shade/texture variation is natural. Any misuse of content, trademarks or logo is prohibited. Disputes are subject to Mumbai jurisdiction.</p>`},
+  shipping:{t:'Shipping Policy', b:`<p>Orders dispatch within <strong>24–48 working hours</strong> from Mumbai. Delivery takes 3–7 working days across India depending on location.</p><p><strong>Shipping:</strong> FREE on orders ₹499 & above; flat ₹49 below that. COD available on serviceable pincodes. Tracking details are shared via SMS, WhatsApp & email once shipped.</p><p>Delays due to weather, strikes or incorrect addresses are beyond our control, but our team will always assist you.</p>`},
+  refund:{t:'Refund Policy', b:`<p>We offer <strong>7-day easy returns</strong> on unused, sealed products. To raise a request, email <strong>care@sowzzuy.in</strong> with Order ID and unboxing photos/video within 48 hours of delivery for damaged/wrong items.</p><p>Approved refunds are processed in 5–7 working days to the original payment mode (COD via UPI/bank). Shipping charges are non-refundable except for our error. Opened/used products cannot be returned for hygiene reasons unless defective.</p>`}
+};
+function openPolicy(k){ document.getElementById('polTitle').textContent=POLICIES[k].t; document.getElementById('polBody').innerHTML=POLICIES[k].b; const o=document.getElementById('polOverlay'); o.style.opacity='1'; o.style.pointerEvents='auto'; }
+function closePolicy(){ const o=document.getElementById('polOverlay'); o.style.opacity='0'; o.style.pointerEvents='none'; }
+
+function toast(msg){
+  const t=document.createElement('div');
+  t.className='toast-in flex items-center gap-3 bg-ink text-white pl-4 pr-5 py-3.5 rounded-2xl shadow-lux max-w-[320px] text-sm';
+  t.innerHTML=`<span class="w-8 h-8 shrink-0 rounded-full bg-gradient-to-br from-gold to-rose flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span><span>${msg}</span>`;
+  document.getElementById('toasts').appendChild(t);
+  setTimeout(()=>{ t.style.transition='all .5s'; t.style.opacity='0'; t.style.transform='translateX(30px)'; setTimeout(()=>t.remove(),500); },2800);
+}
+
+/* ============ ANIMATIONS ============ */
+let observer;
+function observeReveals(){
+  if(!observer) observer=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('active'); observer.unobserve(e.target);} }),{threshold:.12});
+  document.querySelectorAll('.reveal:not(.active)').forEach(el=>observer.observe(el));
+}
+function initCounters(){
+  const cObs=new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const el=e.target, target=+el.dataset.target; let cur=0; const step=Math.max(1,Math.floor(target/80));
+    const iv=setInterval(()=>{ cur+=step; if(cur>=target){cur=target;clearInterval(iv);} el.textContent=cur.toLocaleString('en-IN'); },25);
+    cObs.unobserve(el);
+  }),{threshold:.5});
+  document.querySelectorAll('.counter').forEach(el=>cObs.observe(el));
+}
+
+/* Announcement rotation */
+const MSGS=["Free Shipping on Orders Above ₹499 • COD Available Across India","SOWZZUY Face Serum ₹499 • Face Wash ₹399 • Hair Serum ₹499","Join Glow Club — Get 10% Off Your First Order"];
+let mi=0; setInterval(()=>{ mi=(mi+1)%MSGS.length; document.getElementById('announceText').textContent=MSGS[mi]; },4500);
+
+/* Auto review scroll */
+setInterval(()=>{ const tr=document.getElementById('reviewTrack'); if(!tr) return; if(tr.scrollLeft+tr.clientWidth>=tr.scrollWidth-10) tr.scrollTo({left:0,behavior:'smooth'}); else tr.scrollBy({left:400,behavior:'smooth'}); },6000);
+
+/* ESC closes modals */
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ closeCart(); closeSearch(); closeQV(); closePolicy(); closeMobile(); } });
+
+/* INIT */
+renderFeatured(); renderShop(); renderReviews(); renderCart(); observeReveals(); initCounters();
+document.querySelector('.faq-item').classList.add('open');
+</script>
+</body>
+</html>
